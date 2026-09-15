@@ -9,7 +9,7 @@
 
 .view--apply .page {
   min-height: 100%;
-  color: #111827;
+  color: #101e28;
   padding-bottom: calc(190px + var(--safe-bottom));
   box-sizing: border-box;
 }
@@ -24,7 +24,7 @@
   overflow: hidden;
   border-bottom-left-radius: 46px;
   border-bottom-right-radius: 46px;
-  background: #0b1b47;
+  background: #07304b;
 }
 
 .view--apply .head-bg {
@@ -37,7 +37,7 @@
 .view--apply .head-shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(6, 16, 45, 0.1), rgba(6, 16, 45, 0.78));
+  background: linear-gradient(180deg, rgba(4, 30, 47, 0.1), rgba(4, 30, 47, 0.78));
 }
 
 .view--apply .head-copy {
@@ -68,7 +68,7 @@
   margin-top: 18px;
   width: 82px;
   height: 3px;
-  background: #d6b56d;
+  background: #d99c6a;
 }
 
 .view--apply .sub {
@@ -83,9 +83,9 @@
   margin: -28px 28px 0;
   padding: 26px 30px 30px;
   background: rgba(255, 255, 255, 0.96);
-  border: 1px solid rgba(214, 181, 109, 0.22);
+  border: 1px solid rgba(217, 156, 106, 0.22);
   border-radius: 34px;
-  box-shadow: 0 26px 56px rgba(13, 31, 76, 0.12);
+  box-shadow: 0 26px 56px rgba(9, 52, 80, 0.12);
 }
 
 .view--apply .card-head {
@@ -93,19 +93,19 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 16px;
-  border-bottom: 1px solid #edf0f6;
+  border-bottom: 1px solid #ecf3f7;
 }
 
 .view--apply .card-kicker,
 .view--apply .result-eyebrow {
-  color: #8a7447;
+  color: #8c6545;
 }
 
 .view--apply .result-title {
   margin-top: 12px;
   font-size: 36px;
   line-height: 1.15;
-  color: #132653;
+  color: #0f3a57;
   font-weight: 800;
 }
 
@@ -119,8 +119,8 @@
 .view--apply .ribbon-knot,
 .view--apply .ribbon-tail {
   position: absolute;
-  background: linear-gradient(145deg, #f4d98d, #c8a25d);
-  box-shadow: 0 8px 18px rgba(160, 125, 52, 0.24);
+  background: linear-gradient(145deg, #f7bb8a, #cb8d5a);
+  box-shadow: 0 8px 18px rgba(163, 100, 49, 0.24);
 }
 
 .view--apply .ribbon-wing {
@@ -148,8 +148,8 @@
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: #132653;
-  box-shadow: 0 5px 12px rgba(19, 38, 83, 0.2);
+  background: #0f3a57;
+  box-shadow: 0 5px 12px rgba(15, 58, 87, 0.2);
 }
 
 .view--apply .ribbon-tail {
@@ -172,17 +172,17 @@
 .view--apply .guest-card {
   margin-top: 24px;
   padding: 20px 22px;
-  border: 1px solid #e3e7f0;
+  border: 1px solid #e2ebf1;
   border-radius: 18px;
   background: #fbfcff;
 }
 
 .view--apply .guest-title {
   padding-bottom: 14px;
-  color: #1b3269;
+  color: #164b6e;
   font-size: 28px;
   font-weight: 800;
-  border-bottom: 1px solid #e7eaf1;
+  border-bottom: 1px solid #e6edf2;
 }
 
 .view--apply .form-row {
@@ -198,7 +198,7 @@
 .view--apply .picker-value,
 .view--apply .fixed-value {
   margin-top: 12px;
-  color: #18264a;
+  color: #15374d;
   font-size: 28px;
   font-weight: 600;
 }
@@ -219,13 +219,13 @@
 
 .view--apply .stay-info {
   padding: 0 18px;
-  background: #f5f1e8;
+  background: #f5eee8;
   border-radius: 12px;
 }
 
 .view--apply .form-item {
   padding: 22px 0;
-  border-bottom: 1px solid #edf0f6;
+  border-bottom: 1px solid #ecf3f7;
   display: flex;
   flex-direction: column;
 }
@@ -247,13 +247,13 @@
 
 .view--apply input::placeholder,
 .view--apply textarea::placeholder {
-  color: #b8bec9;
+  color: #b7c2ca;
 }
 
 .view--apply input {
   margin-top: 10px;
   height: 46px;
-  color: #111827;
+  color: #101e28;
   font-size: 30px;
   font-weight: 600;
 }
@@ -266,7 +266,7 @@
   margin-top: 10px;
   width: 100%;
   min-height: 86px;
-  color: #111827;
+  color: #101e28;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.5;
@@ -290,19 +290,19 @@
   height: 92px;
   line-height: 92px;
   padding: 0;
-  background: #26397b;
+  background: #215a80;
   color: #ffffff;
   border-radius: 46px;
   font-size: 28px;
   font-weight: 800;
-  box-shadow: 0 14px 26px rgba(38, 57, 123, 0.18);
+  box-shadow: 0 14px 26px rgba(33, 90, 128, 0.18);
 }
 
 .view--apply .cta.secondary {
   margin-top: 34px;
   background: #ffffff;
-  color: #26397b;
-  border: 2px solid #26397b;
+  color: #215a80;
+  border: 2px solid #215a80;
   box-shadow: none;
 }
 
@@ -330,13 +330,13 @@
 .view--apply .guest-badge {
   margin: 34px auto 0;
   padding: 22px 30px;
-  color: #173064;
+  color: #124669;
   font-size: 27px;
   font-weight: 800;
-  background: linear-gradient(135deg, #f8eac0, #d9b76d, #f3dda5);
-  border: 1px solid rgba(166, 123, 47, 0.55);
+  background: linear-gradient(135deg, #f9d9bf, #dc9d6a, #f5c8a3);
+  border: 1px solid rgba(169, 100, 44, 0.55);
   border-radius: 12px;
-  box-shadow: 0 12px 26px rgba(143, 104, 39, 0.13);
+  box-shadow: 0 12px 26px rgba(146, 86, 36, 0.13);
 }
 
 .view--apply .approved-actions {
@@ -348,24 +348,24 @@
 }
 
 .view--apply .lottery-action {
-  background: linear-gradient(135deg, #142b61, #294785);
+  background: linear-gradient(135deg, #0f4366, #23618b);
 }
 
 .view--apply .edit-action {
-  color: #20386f;
+  color: #1b5074;
   background: #ffffff;
-  border: 2px solid #b9954d;
+  border: 2px solid #bc7d4a;
   box-shadow: none;
 }
 
 .view--apply .edit-action[disabled] {
   color: #a8adb7;
-  border-color: #d7dae1;
-  background: #f3f4f7;
+  border-color: #d6dde2;
+  background: #f3f5f7;
 }
 
 .view--apply .edit-chance {
   margin-top: 18px;
-  color: #8a7447;
+  color: #8c6545;
   font-size: 21px;
 }

@@ -6,7 +6,7 @@ page {
   min-height: 100vh;
   padding: 46rpx 44rpx calc(238rpx + env(safe-area-inset-bottom));
   box-sizing: border-box;
-  color: #17233f;
+  color: #152f41;
 }
 
 .login-hero {
@@ -15,7 +15,7 @@ page {
 }
 
 .eyebrow {
-  color: #8a7447;
+  color: #8c6545;
   font-size: 20rpx;
   font-weight: 700;
   letter-spacing: 5rpx;
@@ -45,9 +45,9 @@ page {
   box-sizing: border-box;
   overflow: hidden;
   color: #ffffff;
-  background: #26397b;
+  background: #215a80;
   border-radius: 12rpx;
-  box-shadow: 0 28rpx 68rpx rgba(38, 57, 123, 0.24);
+  box-shadow: 0 28rpx 68rpx rgba(33, 90, 128, 0.24);
 }
 
 .member-card.compact {
@@ -98,7 +98,7 @@ page {
   top: -120rpx;
   width: 360rpx;
   height: 360rpx;
-  border: 2rpx solid rgba(199, 168, 106, 0.42);
+  border: 2rpx solid rgba(201, 148, 104, 0.42);
   transform: rotate(28deg);
 }
 
@@ -113,7 +113,7 @@ page {
 
 .card-label {
   position: relative;
-  color: #c7a86a;
+  color: #c99468;
   font-size: 26rpx;
   font-weight: 600;
   letter-spacing: 4rpx;
@@ -157,9 +157,9 @@ page {
   margin-bottom: 28rpx;
   padding: 30rpx 32rpx;
   background: rgba(255, 255, 255, 0.92);
-  border: 1rpx solid rgba(199, 168, 106, 0.42);
+  border: 1rpx solid rgba(201, 148, 104, 0.42);
   border-radius: 14rpx;
-  box-shadow: 0 18rpx 42rpx rgba(38, 57, 123, 0.08);
+  box-shadow: 0 18rpx 42rpx rgba(33, 90, 128, 0.08);
   box-sizing: border-box;
 }
 
@@ -170,7 +170,7 @@ page {
   right: 20rpx;
   top: 14rpx;
   height: 1rpx;
-  background: rgba(38, 57, 123, 0.12);
+  background: rgba(33, 90, 128, 0.12);
 }
 
 .panel-head {
@@ -180,17 +180,17 @@ page {
 }
 
 .panel-title {
-  color: #17233f;
+  color: #152f41;
   font-size: 30rpx;
   line-height: 1;
   font-weight: 700;
 }
 
 .edit-link {
-  color: #8a7447;
+  color: #8c6545;
   font-size: 23rpx;
   line-height: 1;
-  border-bottom: 1rpx solid #c7a86a;
+  border-bottom: 1rpx solid #c99468;
   padding-bottom: 6rpx;
 }
 
@@ -205,8 +205,8 @@ page {
 
 .login-btn.primary {
   color: #ffffff;
-  background: #26397b;
-  box-shadow: 0 14rpx 34rpx rgba(38, 57, 123, 0.18);
+  background: #215a80;
+  box-shadow: 0 14rpx 34rpx rgba(33, 90, 128, 0.18);
 }
 
 .hint {
@@ -219,7 +219,7 @@ page {
 
 .form-item {
   padding: 26rpx 0;
-  border-bottom: 1rpx solid rgba(38, 57, 123, 0.12);
+  border-bottom: 1rpx solid rgba(33, 90, 128, 0.12);
 }
 
 .form-item:last-child {
@@ -227,7 +227,7 @@ page {
 }
 
 .label {
-  color: #8a7447;
+  color: #8c6545;
   font-size: 21rpx;
   font-weight: 700;
   letter-spacing: 4rpx;
@@ -238,14 +238,14 @@ input,
   margin-top: 18rpx;
   height: 56rpx;
   line-height: 56rpx;
-  color: #17233f;
+  color: #152f41;
   font-size: 32rpx;
   font-weight: 500;
 }
 
 .ph,
 .picker-value.empty {
-  color: #b4bac7;
+  color: #b3c0c8;
 }
 
 .form-item + .login-btn {
@@ -263,7 +263,7 @@ input,
 
 .info-row text:first-child {
   width: 180rpx;
-  color: #8a7447;
+  color: #8c6545;
   font-size: 22rpx;
   font-weight: 700;
   letter-spacing: 3rpx;
@@ -271,7 +271,7 @@ input,
 
 .info-row text:last-child {
   flex: 1;
-  color: #17233f;
+  color: #152f41;
   text-align: right;
   font-weight: 600;
   word-break: break-all;
@@ -283,8 +283,8 @@ input,
 
 .record-status {
   padding: 8rpx 18rpx;
-  color: #8a7447;
-  border: 1rpx solid rgba(199, 168, 106, 0.78);
+  color: #8c6545;
+  border: 1rpx solid rgba(201, 148, 104, 0.78);
   border-radius: 26rpx;
   font-size: 21rpx;
   line-height: 1;
@@ -292,8 +292,8 @@ input,
 }
 
 .record-status.APPROVED {
-  color: #26397b;
-  border-color: rgba(38, 57, 123, 0.7);
+  color: #215a80;
+  border-color: rgba(33, 90, 128, 0.7);
 }
 
 .record-status.REJECTED {
@@ -308,12 +308,12 @@ input,
   font-size: 26rpx;
   line-height: 1.5;
   text-align: center;
-  border-top: 1rpx solid rgba(38, 57, 123, 0.1);
+  border-top: 1rpx solid rgba(33, 90, 128, 0.1);
 }
 
-.bottom-nav { position:fixed;left:0;right:0;bottom:0;z-index:40;height:132rpx;padding:12rpx 48rpx calc(12rpx + env(safe-area-inset-bottom));box-sizing:content-box;display:flex;align-items:flex-start;justify-content:space-between;background:rgba(255,255,255,.96);border-top:1rpx solid #e7eaf1;box-shadow:0 -12rpx 34rpx rgba(31,44,84,.06); }
+.bottom-nav { position:fixed;left:0;right:0;bottom:0;z-index:40;height:132rpx;padding:12rpx 48rpx calc(12rpx + env(safe-area-inset-bottom));box-sizing:content-box;display:flex;align-items:flex-start;justify-content:space-between;background:rgba(255,255,255,.96);border-top:1rpx solid #e6edf2;box-shadow:0 -12rpx 34rpx rgba(31,44,84,.06); }
 .nav-item { width:172rpx;height:116rpx;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#a3a8b2; }
-.nav-item.active { color:#26397b; }
+.nav-item.active { color:#215a80; }
 .nav-text { margin-top:10rpx;font-size:23rpx;line-height:1;font-weight:600; }
 .nav-icon { position:relative;width:52rpx;height:52rpx;box-sizing:border-box; }
 .home-icon { border:4rpx solid currentColor;border-radius:24rpx 24rpx 6rpx 6rpx; }
@@ -322,8 +322,8 @@ input,
 .user-icon::after { content:'';position:absolute;left:5rpx;bottom:2rpx;width:42rpx;height:25rpx;border:4rpx solid currentColor;border-top-left-radius:26rpx;border-top-right-radius:26rpx;border-bottom:none;box-sizing:border-box; }
 .nav-center { width:172rpx;display:flex;justify-content:center;transform:translateY(-26rpx); }
 .qr-circle { width:112rpx;height:112rpx;border-radius:50%;display:flex;align-items:center;justify-content:center;border:8rpx solid #fff; }
-.lottery-circle { flex-direction:column;background:linear-gradient(145deg,#101a35,#263b6b);border-color:#fffaf0;box-shadow:0 18rpx 38rpx rgba(14,25,52,.28),inset 0 0 0 1rpx rgba(218,184,112,.34); }
-.lottery-mark { color:#d9bd7c;font-size:16rpx;line-height:1;letter-spacing:2rpx;font-family:Georgia,"Times New Roman",serif; }
+.lottery-circle { flex-direction:column;background:linear-gradient(145deg,#0e2737,#22506f);border-color:#fffaf0;box-shadow:0 18rpx 38rpx rgba(14,25,52,.28),inset 0 0 0 1rpx rgba(218,184,112,.34); }
+.lottery-mark { color:#dba67a;font-size:16rpx;line-height:1;letter-spacing:2rpx;font-family:Georgia,"Times New Roman",serif; }
 .lottery-mark-cn { margin-top:8rpx;color:#fff;font-size:22rpx;line-height:1;font-weight:700;letter-spacing:2rpx; }
 
 .profile-badge {
@@ -331,12 +331,12 @@ input,
   right: 42rpx;
   top: 38rpx;
   padding: 9rpx 17rpx;
-  color: #f0d38b;
+  color: #f3b888;
   font-size: 19rpx;
   line-height: 1;
   font-weight: 700;
   letter-spacing: 3rpx;
-  border: 1rpx solid rgba(240, 211, 139, .58);
+  border: 1rpx solid rgba(243, 184, 136, .58);
   border-radius: 24rpx;
 }
 
@@ -344,16 +344,16 @@ input,
   margin-top: 26rpx;
   padding: 24rpx;
   background: #f7f9fd;
-  border: 1rpx solid rgba(38, 57, 123, .1);
+  border: 1rpx solid rgba(33, 90, 128, .1);
   border-radius: 12rpx;
 }
 
 .attendee-title {
   padding-bottom: 15rpx;
-  color: #20386f;
+  color: #1b5074;
   font-size: 26rpx;
   font-weight: 800;
-  border-bottom: 1rpx solid #e4e8f0;
+  border-bottom: 1rpx solid #e3ebf1;
 }
 
 .detail-row {
@@ -365,8 +365,8 @@ input,
   line-height: 1.5;
 }
 
-.detail-row text:first-child { color: #8a7447; }
-.detail-row text:last-child { flex: 1; color: #202b45; text-align: right; word-break: break-all; }
+.detail-row text:first-child { color: #8c6545; }
+.detail-row text:last-child { flex: 1; color: #1e3747; text-align: right; word-break: break-all; }
 
 .agreement-footer {
   padding: 22rpx 28rpx 52rpx;
@@ -377,7 +377,7 @@ input,
 }
 
 .agreement-link {
-  color: #7f6736;
+  color: #815734;
   text-decoration: underline;
 }
 
@@ -385,7 +385,7 @@ input,
 
 .delete-info-link {
   margin-top: 18rpx;
-  color: #7f6736;
+  color: #815734;
   text-decoration: underline;
 }
 
@@ -403,7 +403,7 @@ input,
   align-items: center;
   justify-content: center;
   margin-top: 30rpx;
-  color: #17233f;
+  color: #152f41;
   font-size: 56rpx;
   line-height: 1;
   font-weight: 700;
@@ -419,12 +419,12 @@ input,
   height: 92rpx;
   margin: 0 7rpx;
   padding: 0;
-  color: #17233f;
+  color: #152f41;
   font-size: 48rpx;
   font-weight: 700;
   text-align: center;
-  background: rgba(199, 168, 106, 0.1);
-  border: 2rpx solid rgba(199, 168, 106, 0.7);
+  background: rgba(201, 148, 104, 0.1);
+  border: 2rpx solid rgba(201, 148, 104, 0.7);
   border-radius: 14rpx;
   box-sizing: border-box;
 }

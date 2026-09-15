@@ -11,7 +11,7 @@
   min-height: 100%;
   padding: 46px 44px calc(238px + var(--safe-bottom));
   box-sizing: border-box;
-  color: #17233f;
+  color: #152f41;
 }
 
 .view--login .login-hero {
@@ -20,7 +20,7 @@
 }
 
 .view--login .eyebrow {
-  color: #8a7447;
+  color: #8c6545;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 5px;
@@ -50,9 +50,9 @@
   box-sizing: border-box;
   overflow: hidden;
   color: #ffffff;
-  background: #26397b;
+  background: #215a80;
   border-radius: 12px;
-  box-shadow: 0 28px 68px rgba(38, 57, 123, 0.24);
+  box-shadow: 0 28px 68px rgba(33, 90, 128, 0.24);
 }
 
 .view--login .member-card.compact {
@@ -103,7 +103,7 @@
   top: -120px;
   width: 360px;
   height: 360px;
-  border: 2px solid rgba(199, 168, 106, 0.42);
+  border: 2px solid rgba(201, 148, 104, 0.42);
   transform: rotate(28deg);
 }
 
@@ -121,18 +121,18 @@
   right: 42px;
   top: 38px;
   padding: 9px 17px;
-  color: #f0d38b;
+  color: #f3b888;
   font-size: 19px;
   line-height: 1;
   font-weight: 700;
   letter-spacing: 3px;
-  border: 1px solid rgba(240, 211, 139, 0.58);
+  border: 1px solid rgba(243, 184, 136, 0.58);
   border-radius: 24px;
 }
 
 .view--login .card-label {
   position: relative;
-  color: #c7a86a;
+  color: #c99468;
   font-size: 26px;
   font-weight: 600;
   letter-spacing: 4px;
@@ -176,9 +176,9 @@
   margin-bottom: 28px;
   padding: 30px 32px;
   background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(199, 168, 106, 0.42);
+  border: 1px solid rgba(201, 148, 104, 0.42);
   border-radius: 14px;
-  box-shadow: 0 18px 42px rgba(38, 57, 123, 0.08);
+  box-shadow: 0 18px 42px rgba(33, 90, 128, 0.08);
   box-sizing: border-box;
 }
 
@@ -189,7 +189,7 @@
   right: 20px;
   top: 14px;
   height: 1px;
-  background: rgba(38, 57, 123, 0.12);
+  background: rgba(33, 90, 128, 0.12);
 }
 
 .view--login .panel-head {
@@ -199,7 +199,7 @@
 }
 
 .view--login .panel-title {
-  color: #17233f;
+  color: #152f41;
   font-size: 30px;
   line-height: 1;
   font-weight: 700;
@@ -216,8 +216,8 @@
 
 .view--login .login-btn.primary {
   color: #ffffff;
-  background: #26397b;
-  box-shadow: 0 14px 34px rgba(38, 57, 123, 0.18);
+  background: #215a80;
+  box-shadow: 0 14px 34px rgba(33, 90, 128, 0.18);
 }
 
 .view--login .hint {
@@ -230,7 +230,7 @@
 
 .view--login .form-item {
   padding: 26px 0;
-  border-bottom: 1px solid rgba(38, 57, 123, 0.12);
+  border-bottom: 1px solid rgba(33, 90, 128, 0.12);
 }
 
 .view--login .form-item:last-child {
@@ -238,7 +238,7 @@
 }
 
 .view--login .label {
-  color: #8a7447;
+  color: #8c6545;
   font-size: 21px;
   font-weight: 700;
   letter-spacing: 4px;
@@ -249,14 +249,14 @@
   margin-top: 18px;
   height: 56px;
   line-height: 56px;
-  color: #17233f;
+  color: #152f41;
   font-size: 32px;
   font-weight: 500;
 }
 
 .view--login input::placeholder,
 .view--login .picker-value.empty {
-  color: #b4bac7;
+  color: #b3c0c8;
 }
 
 .view--login .panel-card + .login-btn {
@@ -274,7 +274,7 @@
 
 .view--login .info-row span:first-child {
   width: 180px;
-  color: #8a7447;
+  color: #8c6545;
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -282,7 +282,7 @@
 
 .view--login .info-row span:last-child {
   flex: 1;
-  color: #17233f;
+  color: #152f41;
   text-align: right;
   font-weight: 600;
   word-break: break-all;
@@ -294,8 +294,8 @@
 
 .view--login .record-status {
   padding: 8px 18px;
-  color: #8a7447;
-  border: 1px solid rgba(199, 168, 106, 0.78);
+  color: #8c6545;
+  border: 1px solid rgba(201, 148, 104, 0.78);
   border-radius: 26px;
   font-size: 21px;
   line-height: 1;
@@ -303,8 +303,8 @@
 }
 
 .view--login .record-status.APPROVED {
-  color: #26397b;
-  border-color: rgba(38, 57, 123, 0.7);
+  color: #215a80;
+  border-color: rgba(33, 90, 128, 0.7);
 }
 
 .view--login .record-status.REJECTED {
@@ -319,23 +319,23 @@
   font-size: 26px;
   line-height: 1.5;
   text-align: center;
-  border-top: 1px solid rgba(38, 57, 123, 0.1);
+  border-top: 1px solid rgba(33, 90, 128, 0.1);
 }
 
 .view--login .attendee-detail {
   margin-top: 26px;
   padding: 24px;
   background: #f7f9fd;
-  border: 1px solid rgba(38, 57, 123, 0.1);
+  border: 1px solid rgba(33, 90, 128, 0.1);
   border-radius: 12px;
 }
 
 .view--login .attendee-title {
   padding-bottom: 15px;
-  color: #20386f;
+  color: #1b5074;
   font-size: 26px;
   font-weight: 800;
-  border-bottom: 1px solid #e4e8f0;
+  border-bottom: 1px solid #e3ebf1;
 }
 
 .view--login .detail-row {
@@ -347,8 +347,8 @@
   line-height: 1.5;
 }
 
-.view--login .detail-row span:first-child { color: #8a7447; }
-.view--login .detail-row span:last-child { flex: 1; color: #202b45; text-align: right; word-break: break-all; }
+.view--login .detail-row span:first-child { color: #8c6545; }
+.view--login .detail-row span:last-child { flex: 1; color: #1e3747; text-align: right; word-break: break-all; }
 
 .view--login .agreement-footer {
   padding: 22px 28px 52px;
@@ -359,7 +359,7 @@
 }
 
 .view--login .agreement-link {
-  color: #7f6736;
+  color: #815734;
   text-decoration: underline;
 }
 
@@ -367,7 +367,7 @@
 
 .view--login .delete-info-link {
   margin-top: 18px;
-  color: #7f6736;
+  color: #815734;
   text-decoration: underline;
 }
 
@@ -388,11 +388,11 @@
   width: 46px;
   height: 6px;
   border-radius: 3px;
-  background: rgba(38, 57, 123, 0.14);
+  background: rgba(33, 90, 128, 0.14);
 }
 
 .view--login .login-steps span.on {
-  background: #26397b;
+  background: #215a80;
 }
 
 .view--login .login-wizard .panel-card {
@@ -404,7 +404,7 @@
   margin-top: 16px;
   height: 64px;
   line-height: 64px;
-  color: #17233f;
+  color: #152f41;
   font-size: 34px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -412,7 +412,7 @@
 
 .view--login .login-input::placeholder,
 .view--login .login-input.empty {
-  color: #b4bac7;
+  color: #b3c0c8;
   font-weight: 400;
   letter-spacing: 0;
 }
@@ -437,7 +437,7 @@
   justify-content: center;
   gap: 14px;
   margin-top: 30px;
-  color: #17233f;
+  color: #152f41;
   font-size: 56px;
   line-height: 1;
   font-weight: 700;
@@ -448,28 +448,28 @@
   width: 96px;
   height: 92px;
   padding: 0;
-  color: #17233f;
+  color: #152f41;
   font-size: 48px;
   font-weight: 700;
   text-align: center;
-  background: rgba(199, 168, 106, 0.1);
-  border: 2px solid rgba(199, 168, 106, 0.7);
+  background: rgba(201, 148, 104, 0.1);
+  border: 2px solid rgba(201, 148, 104, 0.7);
   border-radius: 14px;
-  caret-color: #26397b;
+  caret-color: #215a80;
 }
 
 .view--login .name-blank:focus {
   background: #ffffff;
-  border-color: #26397b;
+  border-color: #215a80;
 }
 
 .view--login .logout-btn {
   height: 84px;
   line-height: 84px;
   margin-top: 34px;
-  color: #26397b;
+  color: #215a80;
   background: #ffffff;
-  border: 2px solid rgba(38, 57, 123, 0.5);
+  border: 2px solid rgba(33, 90, 128, 0.5);
   border-radius: 44px;
   font-size: 28px;
   font-weight: 700;

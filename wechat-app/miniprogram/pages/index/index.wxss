@@ -15,7 +15,7 @@ page {
   background: #ffffff;
   height: 430rpx;
   border-radius: 30rpx;
-  box-shadow: 0 22rpx 48rpx rgba(38, 57, 123, 0.13);
+  box-shadow: 0 22rpx 48rpx rgba(33, 90, 128, 0.13);
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -36,7 +36,7 @@ page {
   top: 0;
   bottom: 0;
   z-index: 1;
-  background: rgba(6, 18, 48, 0.16);
+  background: rgba(3, 32, 51, 0.16);
 }
 
 .hero-scene::after {
@@ -65,7 +65,7 @@ page {
   border: none;
   border-radius: 0;
   box-shadow: none;
-  text-shadow: 0 2rpx 10rpx rgba(16, 32, 72, 0.18);
+  text-shadow: 0 2rpx 10rpx rgba(13, 50, 75, 0.18);
 }
 
 .weather-icon {
@@ -80,9 +80,9 @@ page {
   top: 2rpx;
   width: 34rpx;
   height: 34rpx;
-  background: #f0c965;
+  background: #f3a362;
   border-radius: 50%;
-  box-shadow: 0 0 0 7rpx rgba(240, 201, 101, 0.22);
+  box-shadow: 0 0 0 7rpx rgba(243, 163, 98, 0.22);
 }
 
 .cloud-main {
@@ -175,7 +175,7 @@ page {
   position: relative;
   width: 72rpx;
   height: 3rpx;
-  background: #c7a86a;
+  background: #c99468;
   margin-top: 26rpx;
 }
 
@@ -220,7 +220,7 @@ page {
   margin-top: 22rpx;
   font-size: 24rpx;
   color: #ffd2d2;
-  text-shadow: 0 2rpx 8rpx rgba(8, 16, 40, 0.35);
+  text-shadow: 0 2rpx 8rpx rgba(6, 28, 42, 0.35);
 }
 
 .summit-panel {
@@ -230,7 +230,7 @@ page {
   padding: 26rpx 24rpx 28rpx;
   background: rgba(255, 255, 255, 0.96);
   border-radius: 32rpx 32rpx 18rpx 18rpx;
-  box-shadow: 0 18rpx 46rpx rgba(38, 57, 123, 0.1);
+  box-shadow: 0 18rpx 46rpx rgba(33, 90, 128, 0.1);
   box-sizing: border-box;
 }
 
@@ -254,8 +254,8 @@ page {
 
 .weather-tab.active {
   color: #ffffff;
-  background: #26397b;
-  box-shadow: 0 8rpx 18rpx rgba(38, 57, 123, 0.14);
+  background: #215a80;
+  box-shadow: 0 8rpx 18rpx rgba(33, 90, 128, 0.14);
 }
 
 .weather-line {
@@ -285,19 +285,19 @@ page {
   display: block;
   width: 10rpx;
   height: 10rpx;
-  background: #c7a86a;
+  background: #c99468;
   border-radius: 50%;
-  box-shadow: 0 0 0 6rpx rgba(199, 168, 106, 0.13);
+  box-shadow: 0 0 0 6rpx rgba(201, 148, 104, 0.13);
 }
 
 .weather-line text:nth-child(2) {
-  color: #17233f;
+  color: #152f41;
   font-weight: 700;
 }
 
 .weather-sep {
   display: inline-block;
-  color: #c7a86a;
+  color: #c99468;
   font-size: 24rpx;
   transform: translateY(-1rpx);
 }
@@ -309,7 +309,7 @@ page {
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-right: 0;
-  color: #8a7447;
+  color: #8c6545;
 }
 
 .event-panel {
@@ -325,7 +325,7 @@ page {
   flex: 1;
   min-height: 118rpx;
   padding: 24rpx 18rpx;
-  border-right: 1rpx solid rgba(38, 57, 123, 0.08);
+  border-right: 1rpx solid rgba(33, 90, 128, 0.08);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -360,7 +360,7 @@ page {
   background: #ffffff;
   padding: 28rpx;
   box-sizing: border-box;
-  border: 1rpx solid rgba(38, 57, 123, 0.08);
+  border: 1rpx solid rgba(33, 90, 128, 0.08);
   border-radius: 12rpx;
   display: flex;
   flex-direction: column;
@@ -372,13 +372,13 @@ page {
 }
 
 .feature.primary {
-  background: #26397b;
+  background: #215a80;
   color: #ffffff;
-  border-color: #26397b;
+  border-color: #215a80;
 }
 
 .weather-tab.disabled {
-  color: #c1c6d0;
+  color: #c0cad1;
   background: transparent;
   box-shadow: none;
 }
@@ -388,8 +388,8 @@ page {
 }
 
 .status-value.unregistered { color: #8b919d; }
-.status-value.pending { color: #a47727; }
-.status-value.approved { color: #26397b; }
+.status-value.pending { color: #a75f24; }
+.status-value.approved { color: #215a80; }
 .status-value.checked-in { color: #28705a; }
 
 .directed-invite {
@@ -399,11 +399,11 @@ page {
   margin-top: 26rpx;
   padding: 22rpx 26rpx;
   min-height: 88rpx;
-  color: #10244f;
-  background: linear-gradient(135deg, #f7e8bc 0%, #d9b86f 48%, #f3dda5 100%);
-  border: 1rpx solid rgba(168, 125, 49, .72);
+  color: #0c3753;
+  background: linear-gradient(135deg, #f8d6bb 0%, #dc9e6c 48%, #f5c8a3 100%);
+  border: 1rpx solid rgba(171, 102, 46, .72);
   border-radius: 16rpx;
-  box-shadow: 0 12rpx 28rpx rgba(143, 104, 39, .18), inset 0 0 0 1rpx rgba(255,255,255,.48);
+  box-shadow: 0 12rpx 28rpx rgba(146, 86, 36, .18), inset 0 0 0 1rpx rgba(255,255,255,.48);
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -415,9 +415,9 @@ page {
   top: -42rpx;
   width: 130rpx;
   height: 130rpx;
-  border: 1rpx solid rgba(93, 64, 20, .15);
+  border: 1rpx solid rgba(95, 53, 18, .15);
   border-radius: 50%;
-  box-shadow: 0 0 0 18rpx rgba(255, 250, 231, .16);
+  box-shadow: 0 0 0 18rpx rgba(255, 242, 231, .16);
 }
 
 .invite-emblem {
@@ -425,11 +425,11 @@ page {
   height: 62rpx;
   line-height: 62rpx;
   text-align: center;
-  color: #173064;
+  color: #124669;
   font-size: 19rpx;
   font-weight: 700;
   letter-spacing: 1rpx;
-  border: 1rpx solid rgba(23, 48, 100, .5);
+  border: 1rpx solid rgba(18, 70, 105, .5);
   border-radius: 50%;
 }
 
@@ -441,7 +441,7 @@ page {
 }
 
 .invite-venue-copy text:first-child {
-  color: rgba(52, 42, 25, .62);
+  color: rgba(53, 37, 24, .62);
   font-size: 16rpx;
   line-height: 1;
   letter-spacing: 3rpx;
@@ -449,7 +449,7 @@ page {
 
 .invite-venue-copy text:last-child {
   margin-top: 10rpx;
-  color: #10244f;
+  color: #0c3753;
   font-size: 27rpx;
   line-height: 1;
   font-weight: 700;
@@ -462,9 +462,9 @@ page {
   width: 11rpx;
   height: 11rpx;
   margin-right: 10rpx;
-  background: #173064;
+  background: #124669;
   transform: rotate(45deg);
-  box-shadow: 0 0 14rpx rgba(23, 48, 100, .28);
+  box-shadow: 0 0 14rpx rgba(18, 70, 105, .28);
 }
 
 .invitation-manager {
@@ -473,34 +473,34 @@ page {
   padding: 0 32rpx;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #0d214d, #26397b);
+  background: linear-gradient(135deg, #093451, #215a80);
   color: #fff;
   border-radius: 12rpx;
-  box-shadow: 0 14rpx 32rpx rgba(13, 33, 77, .15);
+  box-shadow: 0 14rpx 32rpx rgba(9, 52, 81, .15);
   box-sizing: border-box;
 }
 
-.invitation-manager .feature-no { color: #d5b46e; width: 64rpx; }
+.invitation-manager .feature-no { color: #d89c6b; width: 64rpx; }
 .invitation-manager .manager-copy { flex: 1; display: flex; flex-direction: column; gap: 8rpx; }
 .invitation-manager .feature-meta { color: rgba(255,255,255,.58); }
-.invitation-manager .arrow { color: #d5b46e; font-size: 44rpx; }
+.invitation-manager .arrow { color: #d89c6b; font-size: 44rpx; }
 
 .seat-entry {
-  color: #17233f;
-  background: linear-gradient(145deg, #fffdf8, #f7f0df);
-  border: 1rpx solid rgba(183, 144, 70, 0.38);
-  box-shadow: 0 12rpx 30rpx rgba(38, 57, 123, 0.06);
+  color: #152f41;
+  background: linear-gradient(145deg, #fffdf8, #f8eade);
+  border: 1rpx solid rgba(186, 121, 67, 0.38);
+  box-shadow: 0 12rpx 30rpx rgba(33, 90, 128, 0.06);
 }
 
-.seat-entry .feature-no { color: #a67e32; }
+.seat-entry .feature-no { color: #a9662f; }
 .seat-entry .feature-meta { color: #9aa0a8; }
-.seat-entry .arrow { color: #b7934a; }
+.seat-entry .arrow { color: #ba7b47; }
 
 .lottery-feature {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(145deg, #fffdf8, #f7f0df);
-  border-color: rgba(183, 144, 70, 0.38);
+  background: linear-gradient(145deg, #fffdf8, #f8eade);
+  border-color: rgba(186, 121, 67, 0.38);
 }
 
 .lottery-feature::after {
@@ -510,9 +510,9 @@ page {
   top: -30rpx;
   width: 108rpx;
   height: 108rpx;
-  border: 1rpx solid rgba(183, 144, 70, 0.2);
+  border: 1rpx solid rgba(186, 121, 67, 0.2);
   border-radius: 50%;
-  box-shadow: 0 0 0 16rpx rgba(183, 144, 70, 0.06);
+  box-shadow: 0 0 0 16rpx rgba(186, 121, 67, 0.06);
 }
 
 .feature-no {
@@ -541,17 +541,17 @@ page {
 .section {
   margin: 0 24rpx;
   background: #fff;
-  border: 1rpx solid rgba(199, 168, 106, 0.35);
+  border: 1rpx solid rgba(201, 148, 104, 0.35);
   border-radius: 12rpx;
   overflow: hidden;
-  box-shadow: 0 12rpx 34rpx rgba(38, 57, 123, 0.05);
+  box-shadow: 0 12rpx 34rpx rgba(33, 90, 128, 0.05);
 }
 
 .section-head {
   display: flex;
   justify-content: space-between;
   padding: 30rpx 32rpx;
-  border-bottom: 1rpx solid #26397b;
+  border-bottom: 1rpx solid #215a80;
 }
 
 .section-head text:first-child {
@@ -571,7 +571,7 @@ page {
   align-items: center;
   min-height: 104rpx;
   padding: 0 32rpx;
-  border-bottom: 1rpx solid #eceef1;
+  border-bottom: 1rpx solid #eceff1;
   box-sizing: border-box;
 }
 
@@ -613,7 +613,7 @@ page {
   justify-content: center;
   padding: 48rpx;
   box-sizing: border-box;
-  background: rgba(5, 12, 32, 0.66);
+  background: rgba(3, 22, 34, 0.66);
   animation: maskFade 520ms ease both;
 }
 
@@ -630,8 +630,8 @@ page {
   align-items: flex-start;
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.96);
-  border-top: 1rpx solid #e7eaf1;
-  box-shadow: 0 -12rpx 34rpx rgba(31, 44, 84, 0.06);
+  border-top: 1rpx solid #e6edf2;
+  box-shadow: 0 -12rpx 34rpx rgba(28, 63, 87, 0.06);
 }
 
 .nav-item {
@@ -645,7 +645,7 @@ page {
 }
 
 .nav-item.active {
-  color: #26397b;
+  color: #215a80;
 }
 
 .nav-text {
@@ -714,12 +714,12 @@ page {
   width: 112rpx;
   height: 112rpx;
   border-radius: 50%;
-  background: #17233f;
+  background: #152f41;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 8rpx solid #ffffff;
-  box-shadow: 0 18rpx 36rpx rgba(23, 35, 63, 0.24);
+  box-shadow: 0 18rpx 36rpx rgba(21, 47, 65, 0.24);
 }
 
 .qr-grid {
@@ -746,13 +746,13 @@ page {
 
 .lottery-circle {
   flex-direction: column;
-  background: linear-gradient(145deg, #101a35, #263b6b);
+  background: linear-gradient(145deg, #0e2737, #22506f);
   border-color: #fffaf0;
-  box-shadow: 0 18rpx 38rpx rgba(14, 25, 52, 0.28), inset 0 0 0 1rpx rgba(218, 184, 112, 0.34);
+  box-shadow: 0 18rpx 38rpx rgba(12, 37, 54, 0.28), inset 0 0 0 1rpx rgba(221, 159, 109, 0.34);
 }
 
 .lottery-mark {
-  color: #d9bd7c;
+  color: #dba67a;
   font-size: 16rpx;
   line-height: 1;
   letter-spacing: 2rpx;
@@ -774,7 +774,7 @@ page {
   max-width: 650rpx;
   background: #ffffff;
   border-radius: 18rpx;
-  box-shadow: 0 34rpx 92rpx rgba(5, 12, 32, 0.34);
+  box-shadow: 0 34rpx 92rpx rgba(3, 22, 34, 0.34);
   animation: cardEnter 640ms cubic-bezier(0.18, 0.82, 0.22, 1) both;
 }
 
@@ -783,7 +783,7 @@ page {
   z-index: 2;
   margin: 16rpx;
   padding: 58rpx 42rpx 42rpx;
-  border: 2rpx solid #c7a86a;
+  border: 2rpx solid #c99468;
   border-radius: 12rpx;
   box-sizing: border-box;
   overflow: hidden;
@@ -796,7 +796,7 @@ page {
   right: 42rpx;
   top: 0;
   height: 1rpx;
-  background: rgba(38, 57, 123, 0.18);
+  background: rgba(33, 90, 128, 0.18);
 }
 
 .invite-corner {
@@ -804,10 +804,10 @@ page {
   z-index: 3;
   width: 128rpx;
   height: 128rpx;
-  background: #26397b;
+  background: #215a80;
   opacity: 0.96;
   overflow: hidden;
-  box-shadow: 0 12rpx 26rpx rgba(5, 12, 32, 0.22);
+  box-shadow: 0 12rpx 26rpx rgba(3, 22, 34, 0.22);
 }
 
 .invite-corner.left {
@@ -826,7 +826,7 @@ page {
   position: absolute;
   width: 96rpx;
   height: 96rpx;
-  background: rgba(8, 18, 56, 0.28);
+  background: rgba(5, 37, 59, 0.28);
   transform: rotate(45deg);
 }
 
@@ -844,7 +844,7 @@ page {
   position: absolute;
   width: 88rpx;
   height: 88rpx;
-  border: 2rpx solid rgba(199, 168, 106, 0.62);
+  border: 2rpx solid rgba(201, 148, 104, 0.62);
 }
 
 .invite-corner.left .ribbon-thread {
@@ -869,8 +869,8 @@ page {
   height: 42rpx;
   line-height: 42rpx;
   text-align: center;
-  color: #d8bd7d;
-  border: 1rpx solid rgba(216, 189, 125, 0.82);
+  color: #daa67b;
+  border: 1rpx solid rgba(218, 166, 123, 0.82);
   border-radius: 50%;
   font-size: 22rpx;
   font-weight: 600;
@@ -892,7 +892,7 @@ page {
   position: absolute;
   width: 44rpx;
   height: 44rpx;
-  border: 2rpx solid rgba(199, 168, 106, 0.86);
+  border: 2rpx solid rgba(201, 148, 104, 0.86);
   border-radius: 50%;
 }
 
@@ -907,7 +907,7 @@ page {
 }
 
 .invite-eyebrow {
-  color: #8a7447;
+  color: #8c6545;
   font-size: 20rpx;
   line-height: 1;
   font-weight: 700;
@@ -917,7 +917,7 @@ page {
 
 .invite-title {
   margin-top: 28rpx;
-  color: #17233f;
+  color: #152f41;
   font-size: 38rpx;
   line-height: 1.2;
   font-weight: 700;
@@ -928,12 +928,12 @@ page {
   width: 76rpx;
   height: 2rpx;
   margin: 28rpx auto 0;
-  background: #c7a86a;
+  background: #c99468;
 }
 
 .invite-body {
   margin-top: 38rpx;
-  color: #33415c;
+  color: #314c5e;
   font-size: 28rpx;
   line-height: 1.85;
   text-align: justify;
@@ -961,15 +961,15 @@ page {
 }
 
 .invite-btn.ghost {
-  color: #26397b;
+  color: #215a80;
   background: #ffffff;
-  border: 2rpx solid #26397b;
+  border: 2rpx solid #215a80;
 }
 
 .invite-btn.primary {
   margin-left: 24rpx;
   color: #ffffff;
-  background: #26397b;
+  background: #215a80;
 }
 
 @keyframes maskFade {
@@ -996,13 +996,13 @@ page {
 .privacy-invite-card { max-width:650rpx; }
 .privacy-invite-inner { padding-top:58rpx; }
 .privacy-invite-inner .invite-title { font-size:36rpx; }
-.privacy-subtitle { margin-top:14rpx; color:#8a7447; font-size:22rpx; letter-spacing:2rpx; text-align:center; }
-.privacy-copy { margin-top:30rpx; color:#505a6c; font-size:25rpx; line-height:1.8; text-align:justify; }
+.privacy-subtitle { margin-top:14rpx; color:#8c6545; font-size:22rpx; letter-spacing:2rpx; text-align:center; }
+.privacy-copy { margin-top:30rpx; color:#4e616e; font-size:25rpx; line-height:1.8; text-align:justify; }
 .privacy-check-row { margin-top:30rpx; display:flex; align-items:flex-start; }
 .privacy-checkbox { flex:none; width:34rpx; height:34rpx; margin-top:3rpx; margin-right:16rpx; color:#fff; font-size:24rpx; line-height:34rpx; text-align:center; border:2rpx solid #9da3ae; border-radius:6rpx; box-sizing:border-box; }
-.privacy-checkbox.checked { background:#26397b; border-color:#26397b; }
-.privacy-check-copy { flex:1; color:#555f70; font-size:23rpx; line-height:1.7; }
-.privacy-check-copy text { color:#9a6d20; }
-.privacy-confirm { margin-top:34rpx; height:84rpx; line-height:84rpx; color:rgba(255,255,255,.65); font-size:27rpx; border-radius:44rpx; background:#aeb4c2; }
-.privacy-confirm.enabled { color:#fff; background:linear-gradient(100deg,#122653,#26397b); box-shadow:0 12rpx 26rpx rgba(38,57,123,.22); }
+.privacy-checkbox.checked { background:#215a80; border-color:#215a80; }
+.privacy-check-copy { flex:1; color:#536672; font-size:23rpx; line-height:1.7; }
+.privacy-check-copy text { color:#9d571d; }
+.privacy-confirm { margin-top:34rpx; height:84rpx; line-height:84rpx; color:rgba(255,255,255,.65); font-size:27rpx; border-radius:44rpx; background:#adbac3; }
+.privacy-confirm.enabled { color:#fff; background:linear-gradient(100deg,#0e3a57,#215a80); box-shadow:0 12rpx 26rpx rgba(38,57,123,.22); }
 .privacy-note { margin-top:18rpx; color:#979da8; font-size:19rpx; line-height:1.5; text-align:center; }

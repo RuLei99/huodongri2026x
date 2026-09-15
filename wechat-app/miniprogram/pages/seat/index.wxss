@@ -4,7 +4,7 @@ page {
 
 .page {
   min-height: 100vh;
-  color: #111827;
+  color: #101e28;
   padding-bottom: calc(60rpx + env(safe-area-inset-bottom));
   box-sizing: border-box;
 }
@@ -15,7 +15,7 @@ page {
   overflow: hidden;
   border-bottom-left-radius: 46rpx;
   border-bottom-right-radius: 46rpx;
-  background: #0b1b47;
+  background: #07304b;
 }
 
 .head-bg {
@@ -28,7 +28,7 @@ page {
 .head-shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(6, 16, 45, 0.1), rgba(6, 16, 45, 0.78));
+  background: linear-gradient(180deg, rgba(4, 30, 47, 0.1), rgba(4, 30, 47, 0.78));
 }
 
 .head-copy {
@@ -57,7 +57,7 @@ page {
   margin-top: 18rpx;
   width: 82rpx;
   height: 3rpx;
-  background: #d6b56d;
+  background: #d99c6a;
 }
 
 .sub {
@@ -74,9 +74,9 @@ page {
   line-height: 1.7;
   text-align: center;
   background: #ffffff;
-  border: 1rpx solid rgba(214, 181, 109, 0.22);
+  border: 1rpx solid rgba(217, 156, 106, 0.22);
   border-radius: 24rpx;
-  box-shadow: 0 26rpx 56rpx rgba(13, 31, 76, 0.1);
+  box-shadow: 0 26rpx 56rpx rgba(9, 52, 80, 0.1);
 }
 
 .seat-card {
@@ -87,11 +87,11 @@ page {
   margin: 24rpx 28rpx 0;
   padding: 32rpx 36rpx;
   overflow: hidden;
-  color: #10244f;
-  background: linear-gradient(135deg, #f7e8bc 0%, #d9b86f 48%, #f3dda5 100%);
-  border: 1rpx solid rgba(168, 125, 49, 0.72);
+  color: #0c3753;
+  background: linear-gradient(135deg, #f8d6bb 0%, #dc9e6c 48%, #f5c8a3 100%);
+  border: 1rpx solid rgba(171, 102, 46, 0.72);
   border-radius: 20rpx;
-  box-shadow: 0 16rpx 36rpx rgba(143, 104, 39, 0.18), inset 0 0 0 1rpx rgba(255, 255, 255, 0.48);
+  box-shadow: 0 16rpx 36rpx rgba(146, 86, 36, 0.18), inset 0 0 0 1rpx rgba(255, 255, 255, 0.48);
 }
 
 .seat-card:first-child {
@@ -105,13 +105,13 @@ page {
   top: -48rpx;
   width: 150rpx;
   height: 150rpx;
-  border: 1rpx solid rgba(93, 64, 20, 0.16);
+  border: 1rpx solid rgba(95, 53, 18, 0.16);
   border-radius: 50%;
 }
 
 .seat-name {
   position: relative;
-  color: #17284f;
+  color: #143952;
   font-size: 32rpx;
   font-weight: 800;
 }
@@ -123,7 +123,7 @@ page {
 }
 
 .seat-no {
-  color: #10244f;
+  color: #0c3753;
   font-size: 72rpx;
   line-height: 1;
   font-weight: 800;
@@ -131,7 +131,7 @@ page {
 
 .seat-unit {
   margin-left: 10rpx;
-  color: #10244f;
+  color: #0c3753;
   font-size: 26rpx;
   font-weight: 700;
 }
@@ -142,7 +142,7 @@ page {
   margin: 28rpx;
   border-radius: 20rpx;
   background: #ffffff;
-  box-shadow: 0 18rpx 40rpx rgba(13, 31, 76, 0.1);
+  box-shadow: 0 18rpx 40rpx rgba(9, 52, 80, 0.1);
 }
 
 .hall-placeholder {
@@ -151,9 +151,9 @@ page {
   justify-content: center;
   height: 420rpx;
   margin: 28rpx;
-  color: #a8afbd;
+  color: #a7b5be;
   font-size: 24rpx;
   background: #ffffff;
-  border: 2rpx dashed #d4d9e4;
+  border: 2rpx dashed #d3dee5;
   border-radius: 20rpx;
 }

@@ -1,14 +1,14 @@
 /* 现场通道页：与抽奖码页同一套深蓝底色，1px === 1rpx */
 
 .view--pass {
-  background: #13265c;
+  background: #0f4060;
 }
 
 .view--pass .pass-page {
   min-height: 100%;
   padding: 90px 56px calc(60px + var(--safe-bottom));
   box-sizing: border-box;
-  background: linear-gradient(180deg, #26397b 0%, #13265c 52%, #091634 100%);
+  background: linear-gradient(180deg, #215a80 0%, #0f4060 52%, #062337 100%);
 }
 
 .view--pass .pass-hero {
@@ -17,7 +17,7 @@
 }
 
 .view--pass .eyebrow {
-  color: #d4b56e;
+  color: #d79c6b;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 5px;
@@ -41,12 +41,12 @@
   margin-top: 56px;
   padding: 30px 32px 36px;
   background: rgba(255, 255, 255, 0.96);
-  border: 1px solid rgba(199, 168, 106, 0.42);
+  border: 1px solid rgba(201, 148, 104, 0.42);
   border-radius: 16px;
 }
 
 .view--pass .label {
-  color: #8a7447;
+  color: #8c6545;
   font-size: 21px;
   font-weight: 700;
   letter-spacing: 4px;
@@ -55,20 +55,20 @@
 .view--pass .label.tail {
   margin-top: 30px;
   padding-top: 26px;
-  border-top: 1px solid rgba(38, 57, 123, 0.12);
+  border-top: 1px solid rgba(33, 90, 128, 0.12);
 }
 
 .view--pass .pass-input {
   margin-top: 18px;
   height: 64px;
   line-height: 64px;
-  color: #17233f;
+  color: #152f41;
   font-size: 34px;
   font-weight: 600;
 }
 
 .view--pass .pass-input::placeholder {
-  color: #b4bac7;
+  color: #b3c0c8;
   font-weight: 400;
 }
 
@@ -76,7 +76,7 @@
   height: 92px;
   line-height: 92px;
   margin-top: 40px;
-  color: #17233f;
+  color: #152f41;
   background: rgba(255, 255, 255, 0.92);
   border-radius: 48px;
   font-size: 30px;
@@ -86,6 +86,6 @@
 
 .view--pass .pass-btn.primary {
   color: #ffffff;
-  background: linear-gradient(100deg, #101d3c, #253b68);
-  box-shadow: 0 16px 30px rgba(6, 16, 45, 0.3);
+  background: linear-gradient(100deg, #0d2b3f, #214e6c);
+  box-shadow: 0 16px 30px rgba(4, 30, 47, 0.3);
 }

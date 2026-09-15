@@ -150,7 +150,7 @@
 }
 
 .modal-actions .confirm {
-  color: #576b95;
+  color: #537d99;
 }
 
 @keyframes modalIn {
@@ -231,7 +231,7 @@
 }
 
 .sheet-option.is-active {
-  color: #26397b;
+  color: #215a80;
   font-weight: 700;
 }
 

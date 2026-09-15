@@ -7,9 +7,9 @@
  */
 
 :root {
-  --brand-navy: #26397b;
-  --brand-deep: #17233f;
-  --brand-gold: #c7a86a;
+  --brand-navy: #215a80;
+  --brand-deep: #152f41;
+  --brand-gold: #c99468;
   --page-bg: #f5f7ff;
 
   /* 由 src/core/viewport.js 写入 */
@@ -37,7 +37,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: #0a1430;
+  background: #082132;
   color: #111111;
   font-family: -apple-system, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -56,12 +56,12 @@ body {
 @media (min-width: 480px) {
   body {
     background:
-      radial-gradient(120% 80% at 50% 0%, #16255a 0%, #0a1430 60%, #060d20 100%);
+      radial-gradient(120% 80% at 50% 0%, #12405e 0%, #082132 60%, #041622 100%);
   }
 
   .device {
     border-radius: 28px;
-    box-shadow: 0 40px 90px rgba(2, 8, 26, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.06);
+    box-shadow: 0 40px 90px rgba(1, 17, 27, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.06);
   }
 }
 

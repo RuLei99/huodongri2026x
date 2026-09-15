@@ -13,21 +13,21 @@ page {
   margin: 24rpx;
   background: #fff;
   padding: 52rpx 40rpx 42rpx;
-  border: 1rpx solid #eceef1;
+  border: 1rpx solid #eceff1;
   border-radius: 16rpx;
 }
 
 .admin-head {
   background: #ffffff;
   padding: 58rpx 40rpx 42rpx;
-  border-bottom: 1rpx solid #eceef1;
+  border-bottom: 1rpx solid #eceff1;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
 .eyebrow {
-  color: #26397b;
+  color: #215a80;
   font-size: 20rpx;
   font-weight: 600;
   letter-spacing: 3rpx;
@@ -52,7 +52,7 @@ page {
   height: 72rpx;
   line-height: 72rpx;
   text-align: center;
-  background: #26397b;
+  background: #215a80;
   color: #ffffff;
   font-size: 30rpx;
   font-weight: 700;
@@ -73,7 +73,7 @@ page {
   display: flex;
   background: #fff;
   margin: 24rpx 24rpx 0;
-  border: 1rpx solid #eceef1;
+  border: 1rpx solid #eceff1;
   border-bottom: none;
   border-top-left-radius: 16rpx;
   border-top-right-radius: 16rpx;
@@ -88,7 +88,7 @@ page {
   font-size: 26rpx;
   color: #6f747c;
   position: relative;
-  border-right: 1rpx solid #eceef1;
+  border-right: 1rpx solid #eceff1;
   box-sizing: border-box;
 }
 
@@ -98,7 +98,7 @@ page {
 
 .tab.active {
   color: #ffffff;
-  background: #26397b;
+  background: #215a80;
   font-weight: 700;
 }
 
@@ -106,7 +106,7 @@ page {
   background: #fff;
   padding: 30rpx 32rpx;
   margin: 0 24rpx;
-  border: 1rpx solid #eceef1;
+  border: 1rpx solid #eceff1;
   border-top: none;
 }
 
@@ -134,7 +134,7 @@ page {
   border: 1rpx solid currentColor;
 }
 
-.status.PENDING { color: #8a6200; }
+.status.PENDING { color: #8a3e00; }
 .status.APPROVED { color: #17663a; }
 .status.REJECTED { color: #b42318; }
 
@@ -160,7 +160,7 @@ page {
 .actions {
   margin-top: 28rpx;
   display: flex;
-  border-top: 1rpx solid #eceef1;
+  border-top: 1rpx solid #eceff1;
   padding-top: 24rpx;
 }
 
@@ -178,20 +178,20 @@ page {
 }
 
 .mini-btn.approve {
-  background: #26397b !important;
+  background: #215a80 !important;
   color: #ffffff;
 }
 
 .mini-btn.reject {
   background: #ffffff !important;
-  color: #26397b;
-  border: 1rpx solid #26397b !important;
+  color: #215a80;
+  border: 1rpx solid #215a80 !important;
 }
 
 .empty {
   margin: 0 24rpx;
   background: #ffffff;
-  border: 1rpx solid #eceef1;
+  border: 1rpx solid #eceff1;
   border-top: none;
   border-bottom-left-radius: 16rpx;
   border-bottom-right-radius: 16rpx;
@@ -205,7 +205,7 @@ page {
 .btn {
   height: 92rpx;
   line-height: 92rpx;
-  background: #26397b;
+  background: #215a80;
   color: #fff;
   border-radius: 12rpx;
   font-size: 28rpx;
@@ -232,7 +232,7 @@ page {
   margin: 24rpx 24rpx 0;
   padding: 30rpx 32rpx 34rpx;
   background: #ffffff;
-  border: 1rpx solid #eceef1;
+  border: 1rpx solid #eceff1;
   border-radius: 16rpx;
 }
 
@@ -241,7 +241,7 @@ page {
   align-items: baseline;
   justify-content: space-between;
   padding-bottom: 22rpx;
-  border-bottom: 1rpx solid #eceef1;
+  border-bottom: 1rpx solid #eceff1;
 }
 
 .seat-head text:first-child {
@@ -251,7 +251,7 @@ page {
 }
 
 .seat-head text:last-child {
-  color: #8a7447;
+  color: #8c6545;
   font-size: 21rpx;
 }
 
@@ -260,7 +260,7 @@ page {
   align-items: center;
   justify-content: space-between;
   min-height: 88rpx;
-  border-bottom: 1rpx solid #f2f4f7;
+  border-bottom: 1rpx solid #f2f5f7;
 }
 
 .seat-label {
@@ -269,7 +269,7 @@ page {
 }
 
 .seat-value {
-  color: #26397b;
+  color: #215a80;
   font-size: 28rpx;
   font-weight: 700;
 }
@@ -283,13 +283,13 @@ page {
   font-size: 24rpx;
   line-height: 1.7;
   background: #f7f9fd;
-  border: 1rpx solid #e3e7f0;
+  border: 1rpx solid #e2ebf1;
   border-radius: 12rpx;
   box-sizing: border-box;
 }
 
 .seat-ph {
-  color: #b8bec9;
+  color: #b7c2ca;
 }
 
 .seat-tip {

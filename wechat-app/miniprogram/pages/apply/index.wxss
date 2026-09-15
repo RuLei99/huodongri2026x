@@ -4,7 +4,7 @@ page {
 
 .page {
   min-height: 100vh;
-  color: #111827;
+  color: #101e28;
   padding-bottom: calc(190rpx + env(safe-area-inset-bottom));
   box-sizing: border-box;
 }
@@ -19,7 +19,7 @@ page {
   overflow: hidden;
   border-bottom-left-radius: 46rpx;
   border-bottom-right-radius: 46rpx;
-  background: #0b1b47;
+  background: #07304b;
 }
 
 .head-bg {
@@ -32,7 +32,7 @@ page {
 .head-shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(6, 16, 45, 0.1), rgba(6, 16, 45, 0.78));
+  background: linear-gradient(180deg, rgba(4, 30, 47, 0.1), rgba(4, 30, 47, 0.78));
 }
 
 .head-copy {
@@ -64,7 +64,7 @@ page {
   margin-top: 18rpx;
   width: 82rpx;
   height: 3rpx;
-  background: #d6b56d;
+  background: #d99c6a;
 }
 
 .sub {
@@ -80,9 +80,9 @@ page {
   margin: -28rpx 28rpx 0;
   padding: 26rpx 30rpx 30rpx;
   background: rgba(255, 255, 255, 0.96);
-  border: 1rpx solid rgba(214, 181, 109, 0.22);
+  border: 1rpx solid rgba(217, 156, 106, 0.22);
   border-radius: 34rpx;
-  box-shadow: 0 26rpx 56rpx rgba(13, 31, 76, 0.12);
+  box-shadow: 0 26rpx 56rpx rgba(9, 52, 80, 0.12);
 }
 
 .card-head {
@@ -90,12 +90,12 @@ page {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 16rpx;
-  border-bottom: 1rpx solid #edf0f6;
+  border-bottom: 1rpx solid #ecf3f7;
 }
 
 .card-kicker,
 .result-eyebrow {
-  color: #8a7447;
+  color: #8c6545;
 }
 
 .card-title,
@@ -103,7 +103,7 @@ page {
   margin-top: 12rpx;
   font-size: 36rpx;
   line-height: 1.15;
-  color: #132653;
+  color: #0f3a57;
   font-weight: 800;
 }
 
@@ -117,8 +117,8 @@ page {
 .ribbon-knot,
 .ribbon-tail {
   position: absolute;
-  background: linear-gradient(145deg, #f4d98d, #c8a25d);
-  box-shadow: 0 8rpx 18rpx rgba(160, 125, 52, 0.24);
+  background: linear-gradient(145deg, #f7bb8a, #cb8d5a);
+  box-shadow: 0 8rpx 18rpx rgba(163, 100, 49, 0.24);
 }
 
 .ribbon-wing {
@@ -146,8 +146,8 @@ page {
   width: 22rpx;
   height: 22rpx;
   border-radius: 50%;
-  background: #132653;
-  box-shadow: 0 5rpx 12rpx rgba(19, 38, 83, 0.2);
+  background: #0f3a57;
+  box-shadow: 0 5rpx 12rpx rgba(15, 58, 87, 0.2);
 }
 
 .ribbon-tail {
@@ -170,18 +170,18 @@ page {
 .form {
   padding: 0;
 }
-.guest-card { margin-top:24rpx; padding:20rpx 22rpx; border:1rpx solid #e3e7f0; border-radius:18rpx; background:#fbfcff; }
-.guest-title { padding-bottom:14rpx; color:#1b3269; font-size:28rpx; font-weight:800; border-bottom:1rpx solid #e7eaf1; }
+.guest-card { margin-top:24rpx; padding:20rpx 22rpx; border:1rpx solid #e2ebf1; border-radius:18rpx; background:#fbfcff; }
+.guest-title { padding-bottom:14rpx; color:#164b6e; font-size:28rpx; font-weight:800; border-bottom:1rpx solid #e6edf2; }
 .form-row { display:flex; gap:24rpx; }
 .form-row .half { flex:1; min-width:0; }
-.picker-value,.fixed-value { margin-top:12rpx; color:#18264a; font-size:28rpx; font-weight:600; }
+.picker-value,.fixed-value { margin-top:12rpx; color:#15374d; font-size:28rpx; font-weight:600; }
 .same-company { display:block; margin-top:12rpx; color:#687083; font-size:22rpx; }
 .same-company checkbox { transform:scale(.75); }
-.stay-info { padding:0 18rpx; background:#f5f1e8; border-radius:12rpx; }
+.stay-info { padding:0 18rpx; background:#f5eee8; border-radius:12rpx; }
 
 .form-item {
   padding: 22rpx 0;
-  border-bottom: 1rpx solid #edf0f6;
+  border-bottom: 1rpx solid #ecf3f7;
   display: flex;
   flex-direction: column;
 }
@@ -202,13 +202,13 @@ page {
 }
 
 .ph {
-  color: #b8bec9;
+  color: #b7c2ca;
 }
 
 input {
   margin-top: 10rpx;
   height: 46rpx;
-  color: #111827;
+  color: #101e28;
   font-size: 30rpx;
   font-weight: 600;
 }
@@ -217,7 +217,7 @@ input {
   margin-top: 10rpx;
   width: 100%;
   min-height: 86rpx;
-  color: #111827;
+  color: #101e28;
   font-size: 28rpx;
   font-weight: 500;
 }
@@ -240,20 +240,20 @@ input {
   height: 92rpx;
   line-height: 92rpx;
   padding: 0;
-  background: #26397b;
+  background: #215a80;
   color: #fff;
   border-radius: 46rpx;
   font-size: 28rpx;
   font-weight: 800;
   letter-spacing: 0;
-  box-shadow: 0 14rpx 26rpx rgba(38, 57, 123, 0.18);
+  box-shadow: 0 14rpx 26rpx rgba(33, 90, 128, 0.18);
 }
 
 .cta.secondary {
   margin-top: 34rpx;
   background: #ffffff;
-  color: #26397b;
-  border: 2rpx solid #26397b;
+  color: #215a80;
+  border: 2rpx solid #215a80;
   box-shadow: none;
 }
 
@@ -282,13 +282,13 @@ input {
 .guest-badge {
   margin: 34rpx auto 0;
   padding: 22rpx 30rpx;
-  color: #173064;
+  color: #124669;
   font-size: 27rpx;
   font-weight: 800;
-  background: linear-gradient(135deg, #f8eac0, #d9b76d, #f3dda5);
-  border: 1rpx solid rgba(166, 123, 47, .55);
+  background: linear-gradient(135deg, #f9d9bf, #dc9d6a, #f5c8a3);
+  border: 1rpx solid rgba(169, 100, 44, .55);
   border-radius: 12rpx;
-  box-shadow: 0 12rpx 26rpx rgba(143, 104, 39, .13);
+  box-shadow: 0 12rpx 26rpx rgba(146, 86, 36, .13);
 }
 
 .approved-actions {
@@ -300,25 +300,25 @@ input {
 }
 
 .lottery-action {
-  background: linear-gradient(135deg, #142b61, #294785);
+  background: linear-gradient(135deg, #0f4366, #23618b);
 }
 
 .edit-action {
-  color: #20386f;
+  color: #1b5074;
   background: #fff;
-  border: 2rpx solid #b9954d;
+  border: 2rpx solid #bc7d4a;
   box-shadow: none;
 }
 
 .edit-action[disabled] {
   color: #a8adb7;
-  border-color: #d7dae1;
-  background: #f3f4f7;
+  border-color: #d6dde2;
+  background: #f3f5f7;
 }
 
 .edit-chance {
   margin-top: 18rpx;
-  color: #8a7447;
+  color: #8c6545;
   font-size: 21rpx;
 }
 
@@ -328,7 +328,7 @@ input {
   padding: 30rpx 0 26rpx;
   border-radius: 26rpx;
   background: linear-gradient(180deg, #fbfcff, #f1f5ff);
-  border: 1rpx solid rgba(38, 57, 123, 0.12);
+  border: 1rpx solid rgba(33, 90, 128, 0.12);
 }
 
 .qr-image {
@@ -342,7 +342,7 @@ input {
 
 .ticket-no {
   margin-top: 20rpx;
-  color: #8a7447;
+  color: #8c6545;
   font-size: 22rpx;
   font-weight: 700;
   letter-spacing: 3rpx;

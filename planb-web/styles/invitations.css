@@ -7,7 +7,7 @@
 
 .view--invitations {
   background: #f4f6fb;
-  color: #102044;
+  color: #0d3047;
 }
 
 .view--invitations .page {
@@ -17,7 +17,7 @@
 
 .view--invitations .hero {
   padding: 54px 30px 36px;
-  background: linear-gradient(145deg, #081a40, #263f7f);
+  background: linear-gradient(145deg, #052a43, #215c84);
   color: #ffffff;
 }
 
@@ -25,7 +25,7 @@
   display: block;
   font-size: 18px;
   letter-spacing: 4px;
-  color: #d4b56e;
+  color: #d79c6b;
 }
 
 .view--invitations .title {
@@ -52,9 +52,9 @@
   margin: 24px;
   padding: 30px;
   background: #ffffff;
-  border: 1px solid rgba(190, 158, 91, 0.25);
+  border: 1px solid rgba(192, 135, 89, 0.25);
   border-radius: 16px;
-  box-shadow: 0 12px 30px rgba(16, 32, 68, 0.06);
+  box-shadow: 0 12px 30px rgba(13, 48, 71, 0.06);
 }
 
 .view--invitations .item-head {
@@ -65,7 +65,7 @@
 }
 
 .view--invitations .item-head span:last-child {
-  color: #a67c35;
+  color: #a96832;
   font-size: 24px;
 }
 
@@ -87,7 +87,7 @@
   margin: 0;
   padding: 0;
   font-size: 23px;
-  color: #263f7f;
+  color: #215c84;
   background: #f5f7fc;
   border-radius: 6px;
 }
@@ -105,12 +105,12 @@
   width: 100%;
   height: 82px;
   color: #ffffff;
-  background: linear-gradient(135deg, #132b61, #294785);
+  background: linear-gradient(135deg, #0e4366, #23618b);
   border-radius: 8px;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 2px;
-  box-shadow: 0 10px 24px rgba(19, 43, 97, 0.16);
+  box-shadow: 0 10px 24px rgba(14, 67, 102, 0.16);
 }
 
 .view--invitations .list-button span {
@@ -123,7 +123,7 @@
 
 .view--invitation-list {
   background: #f4f6fb;
-  color: #12224a;
+  color: #0f344d;
 }
 
 .view--invitation-list .page {
@@ -134,12 +134,12 @@
 .view--invitation-list .hero {
   padding: 46px 30px 42px;
   color: #ffffff;
-  background: linear-gradient(145deg, #081a40, #294681);
+  background: linear-gradient(145deg, #052a43, #245f86);
 }
 
 .view--invitation-list .eyebrow {
   display: block;
-  color: #d6b871;
+  color: #d99e6e;
   font-size: 18px;
   letter-spacing: 4px;
 }
@@ -165,7 +165,7 @@
   position: relative;
   background: #ffffff;
   border-radius: 16px;
-  box-shadow: 0 14px 32px rgba(16, 34, 74, 0.1);
+  box-shadow: 0 14px 32px rgba(13, 51, 77, 0.1);
 }
 
 .view--invitation-list .status-tabs > div {
@@ -177,7 +177,7 @@
 
 .view--invitation-list .status-tabs > div.active {
   color: #ffffff;
-  background: #203b78;
+  background: #1b567d;
 }
 
 .view--invitation-list .status-tabs span {
@@ -189,20 +189,20 @@
   margin-bottom: 8px;
   font-size: 34px;
   font-weight: 800;
-  color: #a67c35;
+  color: #a96832;
 }
 
 .view--invitation-list .status-tabs > div.active span:first-child {
-  color: #efd18a;
+  color: #f2b787;
 }
 
 .view--invitation-list .record-card {
   margin: 20px 24px;
   padding: 30px;
   background: #ffffff;
-  border: 1px solid rgba(190, 158, 91, 0.25);
+  border: 1px solid rgba(192, 135, 89, 0.25);
   border-radius: 16px;
-  box-shadow: 0 10px 28px rgba(16, 32, 68, 0.05);
+  box-shadow: 0 10px 28px rgba(13, 48, 71, 0.05);
 }
 
 .view--invitation-list .record-head {
@@ -213,7 +213,7 @@
 }
 
 .view--invitation-list .record-head span:last-child {
-  color: #a67c35;
+  color: #a96832;
   font-size: 23px;
 }
 
@@ -231,30 +231,30 @@
 
 .view--invitation-list .record-summary span:nth-child(2),
 .view--invitation-list .record-summary span:nth-child(4) {
-  color: #20386f;
+  color: #1b5074;
   font-weight: 700;
 }
 
 .view--invitation-list .guest-list {
   margin-top: 22px;
   padding-top: 8px;
-  border-top: 1px solid #edf0f5;
+  border-top: 1px solid #edf2f5;
 }
 
 .view--invitation-list .guest-row {
   margin-top: 18px;
   padding: 22px;
   background: #fafbfe;
-  border: 1px solid #e4e8ef;
+  border: 1px solid #e3ebf0;
   border-radius: 12px;
 }
 
 .view--invitation-list .guest-title {
   padding-bottom: 13px;
-  color: #172d60;
+  color: #134464;
   font-size: 26px;
   font-weight: 800;
-  border-bottom: 1px solid #e4e8ef;
+  border-bottom: 1px solid #e3ebf0;
 }
 
 .view--invitation-list .detail-row {
@@ -266,8 +266,8 @@
   line-height: 1.5;
 }
 
-.view--invitation-list .detail-row span:first-child { color: #8a7447; }
-.view--invitation-list .detail-row span:last-child { flex: 1; color: #263149; text-align: right; word-break: break-all; }
+.view--invitation-list .detail-row span:first-child { color: #8c6545; }
+.view--invitation-list .detail-row span:last-child { flex: 1; color: #243b4b; text-align: right; word-break: break-all; }
 
 .view--invitation-list .review-actions {
   display: flex;
@@ -279,13 +279,13 @@
   flex: 1;
   margin: 0;
   font-size: 24px;
-  color: #263f7f;
-  background: #f2f5fb;
+  color: #215c84;
+  background: #f1f8fc;
 }
 
 .view--invitation-list .review-actions .approve {
   color: #ffffff;
-  background: #263f7f;
+  background: #215c84;
 }
 
 .view--invitation-list .empty {
