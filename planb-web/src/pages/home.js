@@ -445,7 +445,7 @@ export class HomeView extends View {
             </div>
             <div class="menu-row tap" data-key="letter" data-tap="onMenu">
               <span class="no">04</span>
-              <span class="menu-name">活动反馈</span>
+              <span class="menu-name">现场体验反馈</span>
               <span class="arrow">›</span>
             </div>
             <div class="menu-row tap" data-key="agenda" data-tap="onMenu">

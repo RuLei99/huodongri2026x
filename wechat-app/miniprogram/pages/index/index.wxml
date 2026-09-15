@@ -109,7 +109,7 @@
     </view>
     <view class="menu-row" data-key="letter" bindtap="onMenu">
       <text class="no">04</text>
-      <text class="menu-name">活动反馈</text>
+      <text class="menu-name">现场体验反馈</text>
       <text class="arrow">›</text>
     </view>
     <view class="menu-row" data-key="agenda" bindtap="onMenu">
