@@ -483,8 +483,8 @@ export class LoginView extends View {
         </div>
         <div class="nav-center tap" data-tap="goLottery">
           <div class="qr-circle lottery-circle">
-            <div class="lottery-mark">LUCKY</div>
-            <div class="lottery-mark-cn">抽奖码</div>
+            <div class="lottery-mark">INVITE</div>
+            <div class="lottery-mark-cn">邀请函</div>
           </div>
         </div>
         <div class="nav-item active">

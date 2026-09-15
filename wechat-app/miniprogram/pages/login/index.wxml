@@ -114,8 +114,8 @@
   </view>
   <view class="nav-center" bindtap="goLottery">
     <view class="qr-circle lottery-circle">
-      <view class="lottery-mark">LUCKY</view>
-      <view class="lottery-mark-cn">抽奖码</view>
+      <view class="lottery-mark">INVITE</view>
+      <view class="lottery-mark-cn">邀请函</view>
     </view>
   </view>
   <view class="nav-item active">
