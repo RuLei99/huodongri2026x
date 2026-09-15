@@ -8,7 +8,7 @@ import { html } from '../core/dom.js';
 import { request, ensureLogin } from '../core/api.js';
 import { copyText, showImage, showModal, toast } from '../core/ui.js';
 
-const CITIES = ['上海', '济南', '佛山'];
+const CITIES = ['上海'];
 
 function inviteUrl(code) {
   const base = `${location.origin}${location.pathname}`;

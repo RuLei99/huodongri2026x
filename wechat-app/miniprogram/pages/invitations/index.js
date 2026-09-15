@@ -2,7 +2,7 @@ const app = getApp();
 
 Page({
   data: {
-    cities: ['上海', '济南', '佛山'],
+    cities: ['上海'],
     creating: false, invitations: [], applications: [], filteredApplications: [], activeStatus: 'PENDING',
     selectedCity: '', showList: false,
     stats: { pending: 0, approved: 0, checkedIn: 0 },
