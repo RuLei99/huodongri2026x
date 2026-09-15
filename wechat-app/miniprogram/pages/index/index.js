@@ -293,6 +293,14 @@ Page({
     const city = this.data.lockedCity || this.data.currentWeather.city || '';
     wx.navigateTo({ url: `/pages/${page}/index?city=${encodeURIComponent(city)}` });
   },
+  goLetter() {
+    if (!this.data.hasServiceAccess) {
+      wx.showModal({ title: '提示', content: '您好，无法查看', showCancel: false });
+      return;
+    }
+    this.openServicePage('invitation-letter');
+  },
+
   goLottery() {
     if (!this.data.lotteryEligible) {
       wx.showModal({

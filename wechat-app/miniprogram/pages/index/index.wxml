@@ -80,7 +80,7 @@
       <text class="feature-name">参会登记</text>
       <text class="feature-meta">APPLICATION</text>
     </view>
-    <view class="feature lottery-feature" data-key="lottery" bindtap="onMenu">
+    <view class="feature lottery-feature" data-key="letter" bindtap="onMenu">
       <text class="feature-no">02</text>
       <text class="feature-name">邀请函</text>
       <text class="feature-meta">INVITATION</text>
@@ -133,7 +133,7 @@
       </view>
       <view class="nav-text">活动日</view>
     </view>
-    <view class="nav-center" bindtap="goLottery">
+    <view class="nav-center" bindtap="goLetter">
       <view class="qr-circle lottery-circle">
         <view class="lottery-mark">INVITE</view>
         <view class="lottery-mark-cn">邀请函</view>

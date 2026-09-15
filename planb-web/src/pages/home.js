@@ -272,6 +272,15 @@ export class HomeView extends View {
     this.router.navigateTo(`/apply?inviteCode=${encodeURIComponent(this.data.inviteCode)}`);
   }
 
+  goLetter() {
+    if (!this.data.authed) {
+      this.router.navigateTo('/login');
+      return;
+    }
+    const city = this.data.lockedCity || this.data.currentWeather.city || '';
+    this.router.navigateTo(`/invitation-letter?city=${encodeURIComponent(city)}`);
+  }
+
   goLottery() {
     if (!this.data.authed) {
       this.router.navigateTo('/login');
@@ -412,7 +421,7 @@ export class HomeView extends View {
               <span class="feature-name">参会登记</span>
               <span class="feature-meta">APPLICATION</span>
             </div>
-            <div class="feature lottery-feature tap" data-key="lottery" data-tap="onMenu">
+            <div class="feature lottery-feature tap" data-key="letter" data-tap="onMenu">
               <span class="feature-no">02</span>
               <span class="feature-name">邀请函</span>
               <span class="feature-meta">INVITATION</span>
@@ -467,7 +476,7 @@ export class HomeView extends View {
           <div class="nav-icon home-icon"><div></div></div>
           <div class="nav-text">活动日</div>
         </div>
-        <div class="nav-center tap" data-tap="goLottery">
+        <div class="nav-center tap" data-tap="goLetter">
           <div class="qr-circle lottery-circle">
             <div class="lottery-mark">INVITE</div>
             <div class="lottery-mark-cn">邀请函</div>
