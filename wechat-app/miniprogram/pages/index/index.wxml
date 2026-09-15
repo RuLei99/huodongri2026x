@@ -82,8 +82,8 @@
     </view>
     <view class="feature lottery-feature" data-key="lottery" bindtap="onMenu">
       <text class="feature-no">02</text>
-      <text class="feature-name">抽奖码</text>
-      <text class="feature-meta">LUCKY DRAW</text>
+      <text class="feature-name">邀请函</text>
+      <text class="feature-meta">INVITATION</text>
     </view>
   </view>
   <view class="invitation-manager seat-entry" data-key="seat" bindtap="onMenu">
@@ -109,12 +109,12 @@
     </view>
     <view class="menu-row" data-key="letter" bindtap="onMenu">
       <text class="no">04</text>
-      <text class="menu-name">电子邀请函</text>
+      <text class="menu-name">活动反馈</text>
       <text class="arrow">›</text>
     </view>
     <view class="menu-row" data-key="agenda" bindtap="onMenu">
       <text class="no">05</text>
-      <text class="menu-name">大会议程</text>
+      <text class="menu-name">活动议程</text>
       <text class="arrow">›</text>
     </view>
     <view class="menu-row" data-key="route" bindtap="onMenu">

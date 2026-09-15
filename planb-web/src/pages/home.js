@@ -414,8 +414,8 @@ export class HomeView extends View {
             </div>
             <div class="feature lottery-feature tap" data-key="lottery" data-tap="onMenu">
               <span class="feature-no">02</span>
-              <span class="feature-name">抽奖码</span>
-              <span class="feature-meta">LUCKY DRAW</span>
+              <span class="feature-name">邀请函</span>
+              <span class="feature-meta">INVITATION</span>
             </div>
           </div>
 
@@ -445,12 +445,12 @@ export class HomeView extends View {
             </div>
             <div class="menu-row tap" data-key="letter" data-tap="onMenu">
               <span class="no">04</span>
-              <span class="menu-name">电子邀请函</span>
+              <span class="menu-name">活动反馈</span>
               <span class="arrow">›</span>
             </div>
             <div class="menu-row tap" data-key="agenda" data-tap="onMenu">
               <span class="no">05</span>
-              <span class="menu-name">大会议程</span>
+              <span class="menu-name">活动议程</span>
               <span class="arrow">›</span>
             </div>
             <div class="menu-row tap" data-key="route" data-tap="onMenu">
