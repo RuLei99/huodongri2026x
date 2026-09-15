@@ -403,7 +403,7 @@ export class ApplyView extends View {
           </div>
         `)}
 
-        <button type="button" class="cta secondary" data-tap="backHome">返回共创会</button>
+        <button type="button" class="cta secondary" data-tap="backHome">返回活动日</button>
       </div>
     `;
   }

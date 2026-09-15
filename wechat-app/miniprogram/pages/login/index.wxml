@@ -110,7 +110,7 @@
 <view class="bottom-nav">
   <view class="nav-item" bindtap="goHome">
     <view class="nav-icon home-icon"><view></view></view>
-    <view class="nav-text">共创会</view>
+    <view class="nav-text">活动日</view>
   </view>
   <view class="nav-center" bindtap="goLottery">
     <view class="qr-circle lottery-circle">

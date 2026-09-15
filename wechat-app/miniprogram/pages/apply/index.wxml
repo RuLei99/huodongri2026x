@@ -32,7 +32,7 @@
       <button class="cta edit-action" bindtap="startEdit" disabled="{{editRemaining <= 0}}">修改参会登记信息</button>
       <view class="edit-chance">每人共有 2 次修改机会 · 当前剩余 {{editRemaining}} 次</view>
     </view>
-    <button class="cta secondary" bindtap="backHome">返回共创会</button>
+    <button class="cta secondary" bindtap="backHome">返回活动日</button>
   </view>
 
   <view wx:else class="form-card">

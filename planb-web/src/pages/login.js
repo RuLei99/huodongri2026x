@@ -479,7 +479,7 @@ export class LoginView extends View {
       <nav class="bottom-nav">
         <div class="nav-item tap" data-tap="goHome">
           <div class="nav-icon home-icon"><div></div></div>
-          <div class="nav-text">共创会</div>
+          <div class="nav-text">活动日</div>
         </div>
         <div class="nav-center tap" data-tap="goLottery">
           <div class="qr-circle lottery-circle">

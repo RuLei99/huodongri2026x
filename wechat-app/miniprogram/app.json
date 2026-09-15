@@ -16,7 +16,7 @@
     "pages/login/index"
   ],
   "window": {
-    "navigationBarTitleText": "共创会",
+    "navigationBarTitleText": "活动日",
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black",
     "backgroundColor": "#f5f7ff"

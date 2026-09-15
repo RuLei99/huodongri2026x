@@ -331,7 +331,7 @@ Page({
   },
   onShareAppMessage() {
     return {
-      title: '诚邀您参加共创会',
+      title: '诚邀您参加活动日',
       path: `/pages/index/index?code=${encodeURIComponent(this.data.inviteCode || '')}`,
     };
   },

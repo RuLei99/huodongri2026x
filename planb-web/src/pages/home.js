@@ -16,7 +16,7 @@ const SERVICE_KEYS = ['letter', 'agenda', 'route', 'seat'];
 const SERVICE_ROUTES = { letter: 'invitation-letter', agenda: 'agenda', route: 'route', seat: 'seat' };
 
 export class HomeView extends View {
-  static meta = { title: '共创会', background: '#ffffff', textStyle: 'black' };
+  static meta = { title: '活动日', background: '#ffffff', textStyle: 'black' };
 
   constructor(options) {
     super(options);
@@ -349,7 +349,7 @@ export class HomeView extends View {
 
             <div class="hero-copy">
               <div class="kicker">BOCHU WELCOME</div>
-              <div class="hero-title">共创会</div>
+              <div class="hero-title">活动日</div>
               <div class="hero-rule"></div>
               <div class="hero-sub">柏楚2026价值共创峰会</div>
               ${when(this.data.valid === false, html`<div class="code-invalid">邀请码无效或已达使用上限</div>`)}
@@ -372,7 +372,7 @@ export class HomeView extends View {
 
             <div class="weather-line">
               <span class="weather-pin"></span>
-              <span>共创会当日行程</span>
+              <span>活动日当日行程</span>
               <span class="weather-sep">·</span>
               <span>${weather.city}</span>
               <span class="weather-sep">·</span>
@@ -467,7 +467,7 @@ export class HomeView extends View {
       <nav class="bottom-nav">
         <div class="nav-item active tap" data-tap="onHomeTap">
           <div class="nav-icon home-icon"><div></div></div>
-          <div class="nav-text">共创会</div>
+          <div class="nav-text">活动日</div>
         </div>
         <div class="nav-center tap" data-tap="goLottery">
           <div class="qr-circle lottery-circle">

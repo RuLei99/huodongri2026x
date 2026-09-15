@@ -12,7 +12,7 @@ import { html } from './dom.js';
 export class View {
   /** 导航栏配置，对应页面 json 里的 navigationBar* */
   static meta = {
-    title: '共创会',
+    title: '活动日',
     background: '#ffffff',
     textStyle: 'black',
   };
