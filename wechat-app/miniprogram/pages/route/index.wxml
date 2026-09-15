@@ -1,0 +1,43 @@
+<scroll-view class="page-scroll" scroll-y enhanced="{{true}}" show-scrollbar="{{false}}">
+<view class="page">
+  <view class="hero">
+    <text>VENUE GUIDE</text>
+    <text>{{city}}场 · 交通路线</text>
+  </view>
+
+  <view wx:if="{{city === '上海'}}" class="notice">暂未更新~</view>
+  <view wx:else class="venue">
+    <text class="venue-label">活动会场</text>
+    <text class="venue-name">{{venue ? venue.hotel : city + '场会场'}}</text>
+    <text class="venue-address">{{venue ? venue.address : '详细地址待会务团队最终确认'}}</text>
+    <view wx:if="{{venue}}" class="venue-hall">{{venue.hall}}</view>
+    <button bindtap="copyAddress">复制会场信息</button>
+  </view>
+
+  <view wx:if="{{venue}}" class="section">
+    <view class="title">交通距离</view>
+    <view wx:for="{{venue.distances}}" wx:key="name" class="row">
+      <text class="row-name">{{item.name}}</text>
+      <text class="row-detail">{{item.detail}}</text>
+    </view>
+  </view>
+
+  <view wx:if="{{venue && venue.services.length}}" class="section">
+    <view class="title">酒店服务</view>
+    <view wx:for="{{venue.services}}" wx:key="name" class="row column">
+      <text class="row-name">{{item.name}}</text>
+      <text class="row-detail">{{item.detail}}</text>
+    </view>
+  </view>
+
+  <view wx:if="{{venue && venue.around.length}}" class="section">
+    <view class="title">周边</view>
+    <view wx:for="{{venue.around}}" wx:key="name" class="row">
+      <text class="row-name">{{item.name}}</text>
+      <text class="row-detail">{{item.detail}}</text>
+    </view>
+  </view>
+
+  <view wx:if="{{!venue && city !== '上海'}}" class="notice">会场与交通信息将在会场确定后及时更新</view>
+</view>
+</scroll-view>

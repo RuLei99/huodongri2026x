@@ -1,0 +1,67 @@
+server:
+  port: 4556
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  # 本地真实数据库连接与口令放在 backend/config/application-local.yml（已 gitignore），
+  # 存在时自动覆盖下面的默认值；仓库里不保存任何口令。
+  config:
+    import: optional:file:./config/application-local.yml
+  jackson:
+    time-zone: Asia/Shanghai
+    serialization:
+      write-dates-as-timestamps: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/wechat_app?useUnicode=true&characterEncoding=utf8mb4&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      connection-timeout: 5000
+      validation-timeout: 3000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+
+wechat:
+  appid: your-appid
+  secret: your-secret
+  # 公众号消息回调（服务器配置）Token，须与公众号后台填写的一致
+  callback-token: ${WECHAT_CALLBACK_TOKEN:planb-callback-token}
+  # 登录码位数（公众号回复给用户的数字码）
+  login-code:
+    length: 4
+  # 公众号网页授权（网页版登录）：与小程序的 appid/secret 不同
+  official-account:
+    appid: ${WECHAT_OA_APPID:}
+    secret: ${WECHAT_OA_SECRET:}
+    js-sdk-domain: ${WECHAT_JS_SDK_DOMAIN:pmt.fscut.com}
+    # 一键登录链接的网页基地址（网页版部署地址）
+    web-base-url: ${WEB_BASE_URL:https://pmt.fscut.com}
+
+app:
+  # 网页版部署来源（CORS 放通），逗号分隔
+  cors:
+    allowed-origins: http://localhost:4555,http://127.0.0.1:4555,https://pmt.fscut.com
+  # 网页版访问地址，用于生成现场通道二维码链接
+  web-base-url: ${WEB_BASE_URL:https://pmt.fscut.com}
+
+admin:
+  # 首次启动且后台没有任何账号时用这里的账号建一个管理员；建完请立即登录改密。
+  # 口令要求 >=12 位且含字母、数字、符号。仓库里不写口令，值放在
+  # backend/config/application-local.yml 或环境变量 ADMIN_BOOTSTRAP_PASSWORD。
+  bootstrap-username: ${ADMIN_BOOTSTRAP_USERNAME:}
+  bootstrap-password: ${ADMIN_BOOTSTRAP_PASSWORD:}
+
+logging:
+  level:
+    com.example.app: info

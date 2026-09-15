@@ -1,0 +1,107 @@
+<page-meta page-style="overflow: hidden;" />
+<scroll-view
+  class="page-scroll"
+  scroll-y
+  enhanced="{{true}}"
+  show-scrollbar="{{false}}"
+  bounces="{{true}}"
+  scroll-with-animation="{{true}}"
+  lower-threshold="80"
+  bindscrolltolower="onReachBottom"
+>
+<view class="container">
+  <view wx:if="{{!logged}}" class="login-box">
+    <view class="eyebrow">ADMIN CONSOLE</view>
+    <view class="page-title">审核后台</view>
+    <input class="key-input" placeholder="账号" value="{{username}}" bindinput="onInputUsername" />
+    <input class="key-input" password placeholder="口令" value="{{password}}" bindinput="onInputPassword" />
+    <button class="btn" loading="{{logging}}" bindtap="login">登录</button>
+  </view>
+
+  <block wx:else>
+    <view class="admin-head">
+      <view>
+        <view class="eyebrow">ADMIN CONSOLE</view>
+        <view class="page-title">审核后台</view>
+      </view>
+      <view class="admin-head-right">
+        <view class="count">{{total}}</view>
+        <view class="logout" bindtap="logout">退出</view>
+      </view>
+    </view>
+
+    <view class="checkin-bar">
+      <button class="btn scan-btn" bindtap="scanCheckin">扫码入场核验</button>
+    </view>
+
+    <view class="seat-panel">
+      <view class="seat-head">
+        <text>桌位批量导入</text>
+        <text>{{seatSummary}}</text>
+      </view>
+      <view class="seat-row">
+        <text class="seat-label">活动场次</text>
+        <picker range="{{cityOptions}}" value="{{cityIndex}}" bindchange="onSeatCityChange">
+          <view class="seat-value">{{cityOptions[cityIndex]}} ›</view>
+        </picker>
+      </view>
+      <view class="seat-row">
+        <text class="seat-label">导入方式</text>
+        <picker range="{{modeOptions}}" value="{{modeIndex}}" bindchange="onSeatModeChange">
+          <view class="seat-value">{{modeOptions[modeIndex]}} ›</view>
+        </picker>
+      </view>
+      <textarea
+        class="seat-input"
+        placeholder="每行一位嘉宾：姓名,手机号,桌号"
+        placeholder-class="seat-ph"
+        value="{{seatText}}"
+        bindinput="onSeatTextInput"
+        auto-height="{{true}}"
+        cursor-spacing="80"
+      />
+      <view class="seat-tip">{{seatParseTip}}</view>
+      <button class="btn seat-btn" loading="{{seatImporting}}" disabled="{{seatImporting}}" bindtap="importSeats">导入桌位</button>
+    </view>
+
+    <view class="seat-panel">
+      <view class="seat-head">
+        <text>安全设置</text>
+        <text>改完即刻生效</text>
+      </view>
+      <view class="seat-row">
+        <text class="seat-label">邀请人设备限制</text>
+        <text class="seat-value" data-role="inviter" bindtap="toggleDeviceLimit">{{inviterDeviceLimit ? '已开启' : '已关闭'}} ›</text>
+      </view>
+      <view class="seat-row">
+        <text class="seat-label">普通嘉宾设备限制</text>
+        <text class="seat-value" data-role="guest" bindtap="toggleDeviceLimit">{{guestDeviceLimit ? '已开启' : '已关闭'}} ›</text>
+      </view>
+    </view>
+
+    <view class="tabs">
+      <view class="tab {{statusFilter === '' ? 'active' : ''}}" data-status="" bindtap="switchTab">全部</view>
+      <view class="tab {{statusFilter === 'PENDING' ? 'active' : ''}}" data-status="PENDING" bindtap="switchTab">待审核</view>
+      <view class="tab {{statusFilter === 'APPROVED' ? 'active' : ''}}" data-status="APPROVED" bindtap="switchTab">已通过</view>
+      <view class="tab {{statusFilter === 'REJECTED' ? 'active' : ''}}" data-status="REJECTED" bindtap="switchTab">已驳回</view>
+    </view>
+
+    <view wx:if="{{list.length === 0}}" class="empty">暂无登记记录</view>
+
+    <view wx:for="{{list}}" wx:key="id" class="card">
+      <view class="row">
+        <text class="name">{{item.name}}</text>
+        <text class="status {{item.status}}">{{item.checkedIn ? '已入场' : item.statusText}}</text>
+      </view>
+      <view class="info">{{item.phone}} / {{item.company || '未填写'}} / {{item.position || '未填写'}}</view>
+      <view class="reason" wx:if="{{item.reason}}">{{item.reason}}</view>
+      <view class="remark" wx:if="{{item.reviewRemark}}">审核备注：{{item.reviewRemark}}</view>
+      <view class="actions" wx:if="{{item.status === 'PENDING'}}">
+        <button class="mini-btn approve" size="mini" data-id="{{item.id}}" data-status="APPROVED" bindtap="review">通过</button>
+        <button class="mini-btn reject" size="mini" data-id="{{item.id}}" data-status="REJECTED" bindtap="review">驳回</button>
+      </view>
+    </view>
+    <view wx:if="{{hasMore}}" class="more-hint">上拉加载更多</view>
+  </block>
+</view>
+</scroll-view>

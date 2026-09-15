@@ -1,0 +1,324 @@
+/*
+ * 参会服务三页（电子邀请函 / 大会议程 / 交通路线），
+ * 对应 pages/invitation-letter、pages/agenda、pages/route 的 wxss。1px === 1rpx。
+ */
+
+/* ---------- 电子邀请函 ---------- */
+
+.view--invitation-letter {
+  background: #071738;
+}
+
+.view--invitation-letter .page {
+  min-height: 100%;
+  padding: 56px 30px calc(56px + var(--safe-bottom));
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #071738, #17356d);
+}
+
+.view--invitation-letter .letter-card {
+  padding: 58px 42px;
+  color: #17284f;
+  background: linear-gradient(145deg, #fffdf7, #f7edda);
+  border: 2px solid #d5b66f;
+  border-radius: 18px;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.25);
+}
+
+.view--invitation-letter .eyebrow {
+  text-align: center;
+  color: #98752e;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+.view--invitation-letter .title {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.view--invitation-letter .gem {
+  margin: 24px auto 42px;
+  width: 12px;
+  height: 12px;
+  background: #bd9548;
+  transform: rotate(45deg);
+}
+
+.view--invitation-letter .body {
+  margin-top: 24px;
+  font-size: 27px;
+  line-height: 1.9;
+}
+
+.view--invitation-letter .event {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  padding: 28px;
+  color: #ffffff;
+  background: #17356d;
+  border-radius: 10px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.view--invitation-letter .note {
+  margin-top: 28px;
+  color: #8c8373;
+  font-size: 21px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ---------- 大会议程 ---------- */
+
+.view--invitation-letter .invitation-poster{display:block;width:calc(100% - 60px);height:auto;margin:30px;border:1px solid rgba(213,182,111,.65);border-radius:14px;box-shadow:0 28px 70px rgba(0,0,0,.3)}
+.view--invitation-letter .service-unavailable{margin:120px 30px 0;padding:80px 30px;color:#d9bd7c;background:rgba(255,255,255,.06);border:1px solid rgba(213,182,111,.4);border-radius:18px;text-align:center;font-size:32px}
+
+.view--agenda {
+  background: #f4f6fb;
+  color: #152750;
+}
+
+.view--agenda .page {
+  min-height: 100%;
+  padding-bottom: calc(60px + var(--safe-bottom));
+}
+
+.view--agenda .hero {
+  padding: 48px 32px;
+  color: #ffffff;
+  background: linear-gradient(145deg, #081a40, #294681);
+}
+
+.view--agenda .hero span {
+  display: block;
+}
+
+.view--agenda .hero span:first-child {
+  color: #d8bb76;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+.view--agenda .hero span:nth-child(2) {
+  margin-top: 18px;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.view--agenda .hero span:last-child {
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 23px;
+}
+
+.view--agenda .timeline {
+  margin: 28px;
+}
+
+.view--agenda .item {
+  display: flex;
+  padding: 30px 0;
+  border-bottom: 1px solid #dfe3eb;
+}
+
+.view--agenda .item > span {
+  width: 116px;
+  color: #a67e32;
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.view--agenda .item div {
+  flex: 1;
+}
+
+.view--agenda .item div span {
+  display: block;
+}
+
+.view--agenda .item div span:first-child {
+  font-size: 29px;
+  font-weight: 700;
+}
+
+.view--agenda .item div span:last-child {
+  margin-top: 10px;
+  color: #7b8290;
+  font-size: 23px;
+}
+
+.view--agenda .notice {
+  margin: 36px 28px;
+  padding: 24px;
+  color: #8a7447;
+  background: #fff9eb;
+  border-radius: 10px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.view--agenda .agenda-card{margin:28px;padding:34px 24px 38px;color:#fff;background:linear-gradient(150deg,#284f9d,#3e66b7);border:1px solid rgba(255,255,255,.18);border-radius:18px;box-shadow:0 22px 54px rgba(27,59,125,.22)}
+.view--agenda .agenda-heading{display:flex;align-items:center;justify-content:space-between;padding:0 12px 26px;border-bottom:1px solid rgba(255,255,255,.18)}
+.view--agenda .agenda-heading span:first-child{font-size:29px;font-weight:800;letter-spacing:2px}.view--agenda .agenda-heading span:last-child{color:#dfc986;font-size:21px;letter-spacing:3px}
+.view--agenda .agenda-group{display:flex;padding-top:26px}.view--agenda .time-column{width:194px;padding:82px 24px 0 0;text-align:center}.view--agenda .time-column span{display:block}.view--agenda .time-column span:first-child{font-size:27px;font-weight:800;letter-spacing:5px}.view--agenda .time-column span:last-child{margin-top:12px;font-size:22px;letter-spacing:3px}
+.view--agenda .agenda-line{position:relative;flex:1}.view--agenda .agenda-line::before{content:'';position:absolute;left:10px;top:14px;bottom:14px;border-left:3px dotted rgba(255,255,255,.76)}
+.view--agenda .agenda-item{position:relative;display:flex;align-items:flex-start;min-height:68px;padding-left:58px;font-size:25px;font-weight:700;line-height:1.45;letter-spacing:1px}.view--agenda .agenda-item i{position:absolute;z-index:1;left:0;top:7px;width:22px;height:22px;background:#fff;border:5px solid rgba(255,255,255,.22);border-radius:50%;background-clip:padding-box}.view--agenda .dinner-group{padding-top:0}.view--agenda .dinner-group .time-column{padding-top:4px}.view--agenda .dinner-group .time-column span:last-child{margin-top:0}.view--agenda .dinner-group .agenda-line::before{display:none}.view--agenda .agenda-item.dinner{min-height:auto}
+.view--agenda .unavailable{margin:70px 28px;padding:72px 32px;text-align:center;background:#fff;border:1px solid rgba(199,168,106,.45);border-radius:18px;box-shadow:0 18px 46px rgba(38,57,123,.08)}.view--agenda .unavailable span{display:block}.view--agenda .unavailable span:nth-child(2){margin-top:28px;font-size:32px;font-weight:800}.view--agenda .unavailable span:last-child{margin-top:18px;color:#858c99;font-size:23px}.view--agenda .unavailable i{display:block;width:16px;height:16px;margin:0 auto;background:#c7a86a;transform:rotate(45deg);box-shadow:0 0 22px rgba(199,168,106,.48)}
+
+/* ---------- 交通路线 ---------- */
+
+.view--route {
+  background: #f4f6fb;
+  color: #17284f;
+}
+
+.view--route .page {
+  min-height: 100%;
+  padding-bottom: calc(60px + var(--safe-bottom));
+}
+
+.view--route .hero {
+  padding: 48px 32px;
+  color: #ffffff;
+  background: linear-gradient(145deg, #081a40, #294681);
+}
+
+.view--route .hero span {
+  display: block;
+}
+
+.view--route .hero span:first-child {
+  color: #d8bb76;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+.view--route .hero span:last-child {
+  margin-top: 18px;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.view--route .venue,
+.view--route .section {
+  margin: 26px;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(190, 158, 91, 0.28);
+  border-radius: 14px;
+}
+
+.view--route .venue span {
+  display: block;
+}
+
+.view--route .venue-label {
+  color: #a67e32;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.view--route .venue-name {
+  margin-top: 16px;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.view--route .venue-address {
+  margin-top: 12px;
+  color: #858b97;
+  font-size: 23px;
+  line-height: 1.6;
+}
+
+.view--route .venue-hall {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 20px;
+  color: #8a6a20;
+  font-size: 22px;
+  font-weight: 700;
+  background: rgba(214, 181, 109, 0.16);
+  border: 1px solid rgba(168, 125, 49, 0.45);
+  border-radius: 22px;
+}
+
+.view--route .venue-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.view--route .venue button {
+  flex: 1;
+  color: #203b78;
+  background: #f2f5fb;
+  border: 1px solid rgba(32, 59, 120, 0.2);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.view--route .venue button.navigate {
+  color: #ffffff;
+  background: #203b78;
+  border-color: #203b78;
+}
+
+.view--route .title {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.view--route .row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid #e5e8ef;
+}
+
+.view--route .row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.view--route .row.column {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.view--route .row-name {
+  flex: none;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.view--route .row-detail {
+  flex: 1;
+  color: #777f8d;
+  font-size: 23px;
+  line-height: 1.7;
+  text-align: right;
+}
+
+.view--route .row.column .row-detail {
+  text-align: left;
+}
+
+.view--route .notice {
+  margin: 34px 26px;
+  color: #8a7447;
+  font-size: 22px;
+  line-height: 1.6;
+  text-align: center;
+}
+/* 手机端时间段横向展示，避免长标题被左侧时间栏挤压 */
+.view--agenda .agenda-group{display:block;padding-top:28px}.view--agenda .time-column{width:auto;padding:0 0 24px;text-align:left;display:flex;align-items:center;gap:18px}.view--agenda .time-column span:first-child{padding:9px 18px;color:#1d3e83;background:#e7cf91;border-radius:22px;font-size:20px;letter-spacing:2px}.view--agenda .time-column span:last-child{margin-top:0;color:#fff;font-size:23px;font-weight:700;letter-spacing:2px}.view--agenda .agenda-line{padding-left:10px}.view--agenda .agenda-line::before{left:20px}.view--agenda .agenda-item{min-height:80px;padding-left:66px;font-size:25px;line-height:1.5}.view--agenda .agenda-item i{left:10px}.view--agenda .dinner-group{margin-top:10px;padding-top:25px;border-top:1px solid rgba(255,255,255,.18)}.view--agenda .dinner-group .time-column{padding:0 0 22px}.view--agenda .dinner-group .time-column span:first-child{display:none}.view--agenda .dinner-group .agenda-line{padding-left:10px}.view--agenda .agenda-item.dinner{min-height:54px;font-size:28px}
+/* 深海蓝 + 香槟金 */
+.view--agenda .agenda-card{background:linear-gradient(150deg,#0b2862 0%,#12458f 58%,#0b2d6c 100%);border-color:rgba(226,196,118,.42);box-shadow:0 24px 58px rgba(7,29,73,.3),inset 0 0 0 1px rgba(255,255,255,.06)}.view--agenda .agenda-heading{border-bottom-color:rgba(226,196,118,.35)}.view--agenda .agenda-heading span:first-child,.view--agenda .agenda-heading span:last-child{color:#e6c980}.view--agenda .time-column span:first-child{color:#0b2b68;background:linear-gradient(135deg,#f0d99d,#cfaa58)}.view--agenda .time-column span:last-child{color:#e6c980}.view--agenda .agenda-line::before{border-left-color:rgba(226,196,118,.72)}.view--agenda .agenda-item{color:#fff9eb}.view--agenda .agenda-item i{background:#e8cc86;border-color:rgba(255,244,211,.22);box-shadow:0 0 12px rgba(230,201,128,.38)}.view--agenda .dinner-group{border-top-color:rgba(226,196,118,.28)}

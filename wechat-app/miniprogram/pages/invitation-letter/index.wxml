@@ -1,0 +1,4 @@
+<view class="page">
+  <image wx:if="{{available}}" class="poster" src="{{poster}}" mode="widthFix" show-menu-by-longpress="{{true}}" />
+  <view wx:else class="unavailable">暂未更新~</view>
+</view>

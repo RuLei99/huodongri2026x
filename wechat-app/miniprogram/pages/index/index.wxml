@@ -1,0 +1,172 @@
+<page-meta page-style="overflow: hidden;" />
+<scroll-view
+  class="page-scroll"
+  scroll-y
+  enhanced="{{true}}"
+  show-scrollbar="{{false}}"
+  bounces="{{true}}"
+  scroll-with-animation="{{true}}"
+  scroll-top="{{pageScrollTop}}"
+  bindscroll="onPageScrollView"
+>
+  <view class="page">
+  <view class="hero-scene">
+    <image class="hero-bg" src="{{homeBannerUrl}}" mode="aspectFill" />
+    <view class="weather-badge">
+      <view class="weather-icon {{currentWeather.icon}}">
+        <view class="sun-core"></view>
+        <view class="cloud-main"></view>
+        <view class="rain-line one"></view>
+        <view class="rain-line two"></view>
+      </view>
+      <view class="weather-temp">{{currentWeather.temp}}</view>
+      <view class="weather-desc">{{currentWeather.weather}}</view>
+    </view>
+
+    <view class="hero-copy">
+      <view class="kicker">BOCHU WELCOME</view>
+      <view class="hero-title">共创会</view>
+      <view class="hero-rule"></view>
+      <view class="hero-sub">柏楚2026价值共创峰会</view>
+      <view wx:if="{{valid === false}}" class="code-invalid">邀请码无效或已达使用上限</view>
+    </view>
+  </view>
+
+  <view class="summit-panel">
+    <view class="city-tabs">
+      <view wx:for="{{weatherStops}}" wx:key="city" class="weather-tab {{weatherIndex === index ? 'active' : ''}} {{lockedCity && lockedCity !== item.city ? 'disabled' : ''}}" data-index="{{index}}" bindtap="switchWeather">
+        <text>{{item.city}}</text>
+      </view>
+    </view>
+
+    <view class="weather-line">
+      <text class="weather-pin"></text>
+      <text>共创会当日行程</text>
+      <text class="weather-sep">·</text>
+      <text>{{currentWeather.city}}</text>
+      <text class="weather-sep">·</text>
+      <text>{{currentWeather.weather}} {{currentWeather.temp}}</text>
+      <text class="weather-sep">·</text>
+      <text>{{currentWeather.tip}}</text>
+    </view>
+
+    <view class="event-panel">
+      <view class="event-cell">
+        <text class="cell-label">DATE</text>
+        <text class="cell-value">{{currentWeather.date}}</text>
+      </view>
+      <view class="event-cell">
+        <text class="cell-label">VENUE</text>
+        <text class="cell-value">{{currentWeather.city}}</text>
+      </view>
+      <view class="event-cell status-cell">
+        <text class="cell-label">登记状态</text>
+        <text class="cell-value status-value {{registrationStatusClass}}">{{registrationStatus}}</text>
+      </view>
+    </view>
+    <view class="directed-invite" wx:if="{{lotteryEligible && registrationEventCity}}">
+      <view class="invite-emblem">贵宾</view>
+      <view class="invite-venue-copy">
+        <text>EXCLUSIVE INVITATION</text>
+        <text>受邀场次 · {{registrationEventCity}}场</text>
+      </view>
+      <view class="invite-gem"></view>
+    </view>
+  </view>
+
+  <view class="feature-grid">
+    <view class="feature primary" data-key="register" bindtap="onMenu">
+      <text class="feature-no">01</text>
+      <text class="feature-name">参会登记</text>
+      <text class="feature-meta">APPLICATION</text>
+    </view>
+    <view class="feature lottery-feature" data-key="lottery" bindtap="onMenu">
+      <text class="feature-no">02</text>
+      <text class="feature-name">抽奖码</text>
+      <text class="feature-meta">LUCKY DRAW</text>
+    </view>
+  </view>
+  <view class="invitation-manager seat-entry" data-key="seat" bindtap="onMenu">
+    <text class="feature-no">03</text>
+    <view class="manager-copy">
+      <text class="feature-name">桌位图</text>
+      <text class="feature-meta">SEATING MAP</text>
+    </view>
+    <text class="arrow">›</text>
+  </view>
+  <view wx:if="{{canManageInvitations}}" class="invitation-manager" data-key="invitations" bindtap="onMenu">
+    <view class="manager-copy">
+      <text class="feature-name">我的邀请</text>
+      <text class="feature-meta">INVITATION MANAGEMENT</text>
+    </view>
+    <text class="arrow">›</text>
+  </view>
+
+  <view class="section {{hasServiceAccess ? '' : 'service-locked'}}">
+    <view class="section-head">
+      <text>参会服务</text>
+      <text>SERVICES</text>
+    </view>
+    <view class="menu-row" data-key="letter" bindtap="onMenu">
+      <text class="no">04</text>
+      <text class="menu-name">电子邀请函</text>
+      <text class="arrow">›</text>
+    </view>
+    <view class="menu-row" data-key="agenda" bindtap="onMenu">
+      <text class="no">05</text>
+      <text class="menu-name">大会议程</text>
+      <text class="arrow">›</text>
+    </view>
+    <view class="menu-row" data-key="route" bindtap="onMenu">
+      <text class="no">06</text>
+      <text class="menu-name">交通路线</text>
+      <text class="arrow">›</text>
+    </view>
+  </view>
+  </view>
+</scroll-view>
+
+  <view class="bottom-nav">
+    <view class="nav-item active" bindtap="onHomeTap">
+      <view class="nav-icon home-icon">
+        <view></view>
+      </view>
+      <view class="nav-text">共创会</view>
+    </view>
+    <view class="nav-center" bindtap="goLottery">
+      <view class="qr-circle lottery-circle">
+        <view class="lottery-mark">LUCKY</view>
+        <view class="lottery-mark-cn">抽奖码</view>
+      </view>
+    </view>
+    <view class="nav-item" bindtap="goProfile">
+      <view class="nav-icon user-icon">
+        <view></view>
+      </view>
+      <view class="nav-text">个人中心</view>
+    </view>
+  </view>
+
+  <view wx:if="{{showPrivacyConsent}}" class="invite-mask privacy-consent-mask" catchtouchmove="noop">
+    <view class="invite-card privacy-invite-card" catchtap="noop">
+      <view class="invite-corner left">
+        <view class="ribbon-fold"></view><view class="ribbon-thread"></view><view class="ribbon-mark">B</view>
+      </view>
+      <view class="invite-corner right">
+        <view class="ribbon-fold"></view><view class="ribbon-thread"></view><view class="ribbon-mark">C</view>
+      </view>
+      <view class="invite-inner privacy-invite-inner">
+        <view class="invite-eyebrow">PRIVACY NOTICE</view>
+        <view class="invite-title">尊敬的贵宾</view>
+        <view class="privacy-subtitle">用户协议与个人信息保护提示</view>
+        <view class="invite-rule"></view>
+        <view class="privacy-copy">为提供邀请函、参会登记及抽奖码服务，我们需要处理您主动提交的个人信息。请阅读相关协议后自主选择是否同意。</view>
+        <view class="privacy-check-row" bindtap="togglePrivacyConsent">
+          <view class="privacy-checkbox {{privacyChecked ? 'checked' : ''}}"><text wx:if="{{privacyChecked}}">✓</text></view>
+          <view class="privacy-check-copy">我已阅读并同意<text catchtap="openAgreement">《用户服务协议》</text>、<text catchtap="openPrivacy">《隐私政策》</text>及<text catchtap="openLotteryRules">《抽奖活动说明》</text>，并确认已获得同行人员授权后代其提交信息。</view>
+        </view>
+        <button class="privacy-confirm {{privacyChecked ? 'enabled' : ''}}" bindtap="confirmPrivacyConsent">同意并进入</button>
+        <view class="privacy-note">如不同意，将无法使用参会登记等需处理个人信息的服务。</view>
+      </view>
+    </view>
+  </view>
