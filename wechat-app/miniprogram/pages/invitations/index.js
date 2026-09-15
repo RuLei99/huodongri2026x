@@ -98,6 +98,6 @@ Page({
   },
   onShareAppMessage(e) {
     const code = e.target && e.target.dataset.code;
-    return { title: '诚邀您参加柏楚2026价值共创峰会', path: `/pages/index/index?code=${encodeURIComponent(code || '')}` };
+    return { title: '诚邀您参加柏楚2026活动日', path: `/pages/index/index?code=${encodeURIComponent(code || '')}` };
   },
 });

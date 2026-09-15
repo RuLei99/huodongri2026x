@@ -44,7 +44,7 @@ function syncNavBar(meta, depth) {
   navBar.style.backgroundColor = meta.background;
   navBar.style.color = meta.textStyle === 'white' ? '#ffffff' : '#000000';
   navBar.classList.toggle('has-back', depth > 1);
-  document.title = `${meta.title} · 柏楚2026价值共创峰会`;
+  document.title = `${meta.title} · 柏楚2026活动日`;
   if (themeMeta) themeMeta.setAttribute('content', meta.background);
   configureWechatShare();
 }

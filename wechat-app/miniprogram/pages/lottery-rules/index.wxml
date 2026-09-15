@@ -1,7 +1,7 @@
 <scroll-view class="rules-scroll" scroll-y enhanced="{{true}}" show-scrollbar="{{false}}">
   <view class="page">
     <view class="title">抽奖活动说明</view>
-    <view class="updated">适用于柏楚2026价值共创峰会现场抽奖活动</view>
+    <view class="updated">适用于柏楚2026活动日现场抽奖活动</view>
     <view class="section"><view class="heading">一、参与资格</view><view class="text">本活动面向收到定向邀请、完成参会登记并经会务团队审核通过的参会嘉宾。每位符合资格的嘉宾可领取一个四位数字抽奖码。</view></view>
     <view class="section"><view class="heading">二、参与方式</view><view class="text">审核通过后，嘉宾可在小程序“抽奖码”页面抽取专属号码。每位嘉宾仅有一次抽取机会，号码生成后不可重复抽取或自行更换。</view></view>
     <view class="section"><view class="heading">三、开奖安排</view><view class="text">开奖时间、开奖轮次及结果以活动现场主持人和会务团队公布为准。请妥善保管抽奖码，并在现场需要核验时出示。</view></view>

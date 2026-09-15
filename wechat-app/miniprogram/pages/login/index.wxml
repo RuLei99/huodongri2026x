@@ -11,7 +11,7 @@
   <view class="login-hero">
     <view class="eyebrow">BOCHU INVITATION</view>
     <view class="title">{{profileReady ? '个人中心' : '贵宾登录'}}</view>
-    <view wx:if="{{!profileReady}}" class="sub">柏楚2026价值共创峰会</view>
+    <view wx:if="{{!profileReady}}" class="sub">柏楚2026活动日</view>
   </view>
 
   <view class="member-card {{profileReady ? 'compact' : ''}}">

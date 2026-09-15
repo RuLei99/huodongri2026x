@@ -118,7 +118,7 @@ export class AgendaView extends CityView {
             <span>${this.data.city}场 · 大会议程</span>
             <span>智践于行，增长共生</span>
           </div>
-          ${when(available, () => html`<div class="agenda-card"><div class="agenda-heading"><span>价值共创峰会</span><span>${this.data.city}场</span></div><div class="agenda-group"><div class="time-column"><span>实践分享</span><span>14:00—16:30</span></div><div class="agenda-line">${AGENDA.map((title) => html`<div class="agenda-item"><i></i><span>${title}</span></div>`)}</div></div><div class="agenda-group dinner-group"><div class="time-column"><span></span><span>17:30—21:00</span></div><div class="agenda-line"><div class="agenda-item dinner"><i></i><span>晚宴</span></div></div></div></div><div class="notice">实际安排以会务团队现场通知为准</div>`)}
+          ${when(available, () => html`<div class="agenda-card"><div class="agenda-heading"><span>柏楚2026活动日</span><span>${this.data.city}场</span></div><div class="agenda-group"><div class="time-column"><span>实践分享</span><span>14:00—16:30</span></div><div class="agenda-line">${AGENDA.map((title) => html`<div class="agenda-item"><i></i><span>${title}</span></div>`)}</div></div><div class="agenda-group dinner-group"><div class="time-column"><span></span><span>17:30—21:00</span></div><div class="agenda-line"><div class="agenda-item dinner"><i></i><span>晚宴</span></div></div></div></div><div class="notice">实际安排以会务团队现场通知为准</div>`)}
           ${when(!available, html`<div class="unavailable"><i></i><span>暂未更新~</span></div>`)}
         </div>
       </div>

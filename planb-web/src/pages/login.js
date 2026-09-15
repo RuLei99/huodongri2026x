@@ -418,7 +418,7 @@ export class LoginView extends View {
         <div class="login-hero">
           <div class="eyebrow">BOCHU INVITATION</div>
           <div class="title">贵宾登录</div>
-          <div class="sub">柏楚2026价值共创峰会</div>
+          <div class="sub">柏楚2026活动日</div>
         </div>
 
         <div class="login-steps">
@@ -444,7 +444,7 @@ export class LoginView extends View {
             <div class="login-hero">
               <div class="eyebrow">BOCHU INVITATION</div>
               <div class="title">${profileReady ? '个人中心' : '贵宾登录'}</div>
-              ${when(!profileReady, html`<div class="sub">柏楚2026价值共创峰会</div>`)}
+              ${when(!profileReady, html`<div class="sub">柏楚2026活动日</div>`)}
             </div>
 
             <div class="member-card ${cx({ compact: profileReady })}">

@@ -56,7 +56,7 @@ export class InvitationsView extends View {
     const code = dataset.code;
     if (!code) return;
     const url = inviteUrl(code);
-    const payload = { title: '诚邀您参加柏楚2026价值共创峰会', text: '诚邀您参加柏楚2026价值共创峰会', url };
+    const payload = { title: '诚邀您参加柏楚2026活动日', text: '诚邀您参加柏楚2026活动日', url };
 
     if (navigator.share && navigator.canShare && navigator.canShare(payload)) {
       try {

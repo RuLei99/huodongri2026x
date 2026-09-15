@@ -358,7 +358,7 @@ export class HomeView extends View {
               <div class="kicker">BOCHU WELCOME</div>
               <div class="hero-title">活动日</div>
               <div class="hero-rule"></div>
-              <div class="hero-sub">柏楚2026价值共创峰会</div>
+              <div class="hero-sub">柏楚2026活动日</div>
               ${when(this.data.valid === false, html`<div class="code-invalid">邀请码无效或已达使用上限</div>`)}
             </div>
           </div>
@@ -426,15 +426,6 @@ export class HomeView extends View {
               <span class="feature-name">邀请函</span>
               <span class="feature-meta">INVITATION</span>
             </div>
-          </div>
-
-          <div class="invitation-manager seat-entry tap" data-key="seat" data-tap="onMenu">
-            <span class="feature-no">03</span>
-            <div class="manager-copy">
-              <span class="feature-name">桌位图</span>
-              <span class="feature-meta">SEATING MAP</span>
-            </div>
-            <span class="arrow">›</span>
           </div>
 
           ${when(this.data.canManageInvitations, html`

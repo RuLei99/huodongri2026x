@@ -1,6 +1,6 @@
 import { request } from './api.js';
 
-const TITLE = '柏楚2026价值共创峰会';
+const TITLE = '柏楚2026活动日';
 const DESC = '智践于行，增长共生';
 const IMAGE = 'https://pmt.fscut.com/assets/share-cover.png';
 let configuredUrl = '';
